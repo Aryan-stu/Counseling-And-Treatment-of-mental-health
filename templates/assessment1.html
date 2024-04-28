@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>MindPath-Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../static/img/favicon.png" rel="icon">
+  <link href="../static/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../static/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../static/css/assessment1Style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top header-inner-pages ">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="/">Home</a></li>
+          <li><a class="nav-link scrollto" href="/#about">About</a></li>
+          <li><a class="nav-link scrollto" href="/#services">Services</a></li>
+          <li><a class="nav-link scrollto " href="/#testimonials">Testimonials</a></li>
+          <!--li><a class="nav-link scrollto" href="#pricing">Subscribtions</a></li-->
+          <li class="dropdown"><a href="#"><span>Products</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li class="dropdown"><a href="/"><span>Resources</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="/#hero">Sage-Bot</a></li>
+                  <li><a href="/#info">Articles and Info</a></li>
+                  <li><a href="/#tools">Assessment Tools</a></li>
+                  <li><a href="/#others">Other Contacts</a></li>
+                  <li><a href="/#crisis">Crisis Helpline</a></li>
+                </ul>
+              <li class="dropdown"><a href="#"><span>Management</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Track Habits</a></li>
+                  <li><a href="#">Symptoms Report</a></li>
+                  <li><a href="#">Book Sessions</a></li>
+                  <li><a href="#">therapy methods</a></li>
+                  <li><a href="#">wellness resources</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Daily Diary</a></li>
+              <li><a href="#">Feedback</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+
+      </nav><!-- .navbar -->
+      <h1 class="logo"><a href="/">MindPath</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="/" class="logo"><img src="../static/img/logo.png" alt="" class="img-fluid"></a>-->
+      <nav class="navba">
+        <ul>
+          <!--li class="getstart out" id="signOutBtn">SIGNOUT</li-->
+          <li class="btnLogin-popup getstart in" id="login">LOGIN</li>
+          <li class="out"><img class="profile" id="menuButton" src="../static/img/user-profile.png" alt=""></li>
+        </ul>
+      </nav>
+    </div>
+  </header><!-- End Header -->
+  <main id="main">
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Symptom Assessment</h2>
+          <ol>
+            <li><a href="/">Home</a></li>
+            <li>Symptom Assessment</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <section class="inner-page">
+      <!-- ======= LOGIN popup ======= -->
+      <div class="wrapper2">
+        <span class="icon-close2">
+          <ion-icon name="close"></ion-icon>
+        </span>
+        <div class="form-box">
+          <h3>Enter Email to reset</h3>
+          <form action="#" id="MainForm2">
+            <div class="input-box">
+              <span class="icon"><ion-icon name="mail"></ion-icon></span>
+              <input type="email" class="snd" id="emailInp2" placeholder="Email" required>
+              <button type="submit" class="btn">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="wrapper">
+        <span class="icon-close">
+          <ion-icon name="close"></ion-icon>
+        </span>
+        <div class="form-box log">
+          <h2>LOGIN</h2>
+          <form action="#" id="MainForm">
+            <div class="input-box">
+              <span class="icon"><ion-icon name="mail"></ion-icon></span>
+              <input type="email" id="emailInp" placeholder="Email" required>
+
+            </div>
+            <div class="input-box">
+              <span class="icon" onclick="pass()"><ion-icon name="lock-closed" id="pass-icon"></ion-icon></span>
+              <input type="password" id="passwordInp" placeholder="Password" required>
+            </div>
+            <div class="remember-forgot">
+              <label><input type="checkbox" id="rememberMeCheckbox">Remember me</label>
+              <label class="forgotpass forgot">Forgot Password?</label>
+            </div>
+            <button type="submit" class="btn" id="loginbtn">Login</button>
+            <div class="login-register">
+              <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+            </div>
+          </form>
+        </div>
+
+        <div class="form-box register">
+          <h2>Registration</h2>
+          <form id="MainForm1">
+            <div class="input-box">
+              <span class="icon"><ion-icon name="person"></ion-icon></span>
+              <input type="text" id="usernameInp1" placeholder="Username" required>
+
+            </div>
+            <div class="input-box">
+              <span class="icon"><ion-icon name="mail"></ion-icon></span>
+              <input type="email" id="emailInp1" placeholder="Email" required>
+
+            </div>
+            <div class="input-box">
+              <span class="icon"><ion-icon onclick="pass1()" name="lock-closed" id="pass-icon1"></ion-icon></span>
+              <input type="password" id="passwordInp1" placeholder="Password" required>
+
+            </div>
+            <div class="remember-forgot">
+              <label><input type="checkbox" required>I Agree to Terms & Conditions</label>
+            </div>
+            <button type="submit" onclick="" class="btn">Register</button>
+            <div class="login-register">
+              <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+            </div>
+          </form>
+        </div>
+
+      </div>
+      <!-- End LOGIN popup -->
+      <!-- ======= User Profile ======= -->
+      <div class="sub-menu-wrap" id="subMenu">
+        <div class="sub-menu">
+          <div class="user-info">
+            <img id="profileImageElement" src="../static/img/user-profile.png" alt="Profile Image">
+            <h3 id="name">[Username]</h3>
+          </div>
+          <hr>
+          <a href="/user-profile" class="sub-menu-link">
+            <img src="../static/img/profile.png" alt="">
+            <p>Edit Profile</p>
+            <span>></span>
+          </a>
+          <a href="/" class="sub-menu-link">
+            <img src="../static/img/setting.png" alt="">
+            <p>Settings</p>
+            <span>></span>
+          </a>
+          <a href="#" class="sub-menu-link">
+            <img src="../static/img/help.png" alt="">
+            <p>Help</p>
+            <span>></span>
+          </a>
+          <a href="#" class="sub-menu-link">
+            <img src="../static/img/logout.png" alt="">
+            <p id="signOutBtn">Logout</p>
+            <span>></span>
+          </a>
+        </div>
+      </div>
+      <!-- End User profile -->
+      <!-- Assessment Section -->
+
+      <style>
+        #container {
+          margin-top: 50px;
+width: 100%;
+          min-height: 100%;
+
+        }
+
+        #right-frame {
+
+          width: 100%;
+          min-height: 100vh;
+
+        }
+
+        #left-frame button {
+          display: block;
+          width: 30%;
+          background: none;
+          border: none;
+        }
+
+        .assess {
+          background: linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 214, 0.9) 100%), url("../img/hero-bg.jpg") center center no-repeat;
+          color: white;
+          padding-left: 10%;
+          padding-right: 10%;
+          padding-bottom: 20px;
+          padding-top: 20px;
+          min-height: 50vh;
+
+          margin-top: -20px;
+          width: 100%;
+        }
+      </style>
+      <section id="hero container" class=" align-items-center">
+
+        <div id="container" class="container-fluid" data-aos="fade-up">
+          <div id="right-frame">
+            <div id="content1" class="content-div">
+              <div class="LTest" id="test" style="display: none;">
+                <div class="prpl">
+                  <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <h2>Mental Health Assessment</h2>
+                    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                      type="module"></script>
+
+                    <dotlottie-player src="https://lottie.host/bf0dbbaa-d07b-4495-9dfa-a861cb357843/ObFudauBsq.json"
+                      background="transparent" speed="1" style="width: 300px; height: 300px;" loop
+                      autoplay></dotlottie-player>
+                    <h5 style="text-align: center;">Monitoring your mental health is crucial for your overall
+                      well-being. Tracking your symptoms allows you to identify patterns, understand triggers, and gauge
+                      the effectiveness of your coping strategies. Take control of your mental health journey by
+                      starting to track your symptoms today. Click the below to begin.</h5>
+                    <button class="btn-get-started scrollto"><a href="/Mental-Health-Test">To the
+                        Assessment</a></button>
+                  </div>
+                </div>
+
+                <div class="manas">
+                  <h1 style="display: flex; width: 100%; justify-content: center;">Emergency Helpline Number</h1>
+                  <br>
+                  <p style="font-size: larger;">
+                    If you are facing any severe mental health issues that needs immediate attention.Tele MANAS is a
+                    comprehensive goverment mental health care service.
+                    You can dial the Toll free numbers below to get in touch with their Counsellor.Visit <a
+                      href="https://telemanas.mohfw.gov.in/">https://telemanas.mohfw.gov.in/</a> to know more.</p>
+                  <div class="call" style="display: flex; width: 100%;">
+                    <a class="blue blue1" href="tel:14416">Call 14416</a>
+                    <p style="margin: auto; font-size: larger;">OR</p> <a class="blue blue2"
+                      href="tel:1-800 891 4416">Call 1-800 891 4416</a>
+                  </div>
+                </div>
+              </div>
+              <div class="result" id="result" style="display: none;">
+                <section class="graph" style=" min-height: 40vh; ;">
+                  <h1 style="margin: 20px;">Mental Disorder Probability</h1>
+                  <div class="semi" style="display: flex; justify-content: center; align-items: center;">
+                    <div role="progressbar" class="progress-bar-1" aria-valuenow="33" aria-valuemin="0"
+                      aria-valuemax="100" style="--value: 0"></div>
+
+                  </div>
+                  <div style=" width: 100%; margin-bottom: 30px;">
+
+                    <p>Your mental disorder probability rate is currently <span id="lvalue">0%</span>. The lower your
+                      probability rate, the better your resilience against mental disorders. Even if you encounter
+                      mental health challenges in the future, a healthier lifestyle can significantly reduce your risk.
+                      Explore the detailed report below for insights and suggestions on how to maintain a lower
+                      probability rate.</p>
+
+
+
+                  </div>
+                </section>
+                <div class="assess" style=" width: 100%;">
+                  <h1 style="margin-bottom: 30px; display: flex; justify-content: center;">Symptom Probability Index
+                  </h1>
+
+                  <style>
+                    .dep {
+                      display: flex;
+                      padding: 10px;
+                      align-items: center;
+
+                    }
+
+                    .dep h3 {
+                      margin-left: 5px;
+                      align-items: center;
+                    }
+
+                    .dep button {
+                      margin-left: auto;
+                      border: none;
+                      font-weight: bold;
+
+                      padding: 5px;
+                    }
+
+                    .table-container {
+                      display: none;
+                      margin-left: 10px;
+                      padding: 5px;
+
+
+                    }
+
+                    .asse {
+                      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+                      color: black;
+                      background-color: white;
+
+                      border-radius: 5px;
+                      margin-bottom: 5px;
+
+                    }
+                  </style>
+                  <div class="" style="display: flex; width: 100%;">
+                    <div style="width: 100%;">
+                      <div
+                        style="display: flex; width:100%; margin-left:20px; align-items: center; justify-content: center;">
+                        <h2>Depression Assessment</h2>
+                      </div>
+                      <!-- Depression Type 1 -->
+                      <div class="asse">
+                        <div class="dep">
+                          <h4>Major depression </h4>
+                          <h3 id="majorDep">: 70%</h3>
+                          <button onclick="toggleTable('table1')">Details</button>
+                        </div>
+                        <div id="table1" class="table-container">
+                          <p>This is the most common type of depression, and it is characterized by persistent feelings
+                            of sadness, hopelessness, and worthlessness. People with major depression may also
+                            lose interest in activities they used to enjoy, have trouble sleeping or eating, and
+                            experience changes in their energy levels</p>
+                          <!-- Add more rows for other symptoms -->
+
+                        </div>
+                      </div>
+
+                      <!-- Depression Type 2 -->
+                      <div class="asse">
+                        <div class="dep">
+                          <h4> Persistent depressive disorder</h4>
+                          <h3 id="pdd">: 60%</h3>
+                          <button onclick="toggleTable('table2')">Details</button>
+                        </div>
+                        <div id="table2" class="table-container">
+                          <p>
+                            This is a type of chronic depression that is less severe than major depression, but it lasts
+                            for at least two years. People with dysthymia may experience some of the same symptoms
+                            as people with major depression, but they are less intense.
+                          </p>
+                        </div>
+                      </div>
+
+
+                      <!-- Depression Type 3 -->
+                      <div class="asse">
+                        <div class="dep">
+                          <h4> Bipolar disorder</h4>
+                          <h3 id="BipolarD">: 60%</h3>
+                          <button onclick="toggleTable('table3')">Details</button>
+                        </div>
+                        <div id="table3" class="table-container">
+                          <p>
+                            This is a mental health condition that is characterized by alternating episodes of mania
+                            and depression. During manic episodes, people experience elevated energy levels,
+                            increased mood, and decreased need for sleep. During depressive episodes, they
+                            experience the same symptoms as people with major depression.
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- Depression Type 4 -->
+                      <div id="f18">
+                        <div class="asse">
+                          <div class="dep">
+                            <h4> Postpartum depression</h4>
+                            <h3 id="ppd">: 60%</h3>
+                            <button onclick="toggleTable('table4')">Details</button>
+                          </div>
+                          <div id="table4" class="table-container">
+                            <p>
+                              This is a type of depression that can develop after giving birth. It is thought to be
+                              caused by a combination of factors, including hormonal changes, sleep deprivation, and the
+                              stress
+                              of new parenthood.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Depression Type 5 -->
+                      <div class="asse">
+                        <div class="dep">
+                          <h4> Seasonal affective disorder</h4>
+                          <h3 id="seasonalD">: 60%</h3>
+                          <button onclick="toggleTable('table5')">Details</button>
+                        </div>
+                        <div id="table5" class="table-container">
+                          <p>
+                            This is a type of depression that occurs during the winter months, when there is less
+                            sunlight. It is thought to be caused by a disruption in the body's circadian rhythm.
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- Depression Type 6 -->
+                      <div class="asse">
+                        <div class="dep">
+                          <h4> Psychotic depression</h4>
+                          <h3 id="psychoticD">: 60%</h3>
+                          <button onclick="toggleTable('table6')">Details</button>
+                        </div>
+                        <div id="table6" class="table-container">
+                          <p>
+                            This is a type of depression that is characterized by delusions and/or hallucinations.
+                            Delusions are false beliefs that a person holds even when presented with evidence to the
+                            contrary. Hallucinations are sensory experiences that occur in the absence of an external
+                            stimulus
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- Depression Type 7 -->
+                      <div id="f18a">
+                        <div class="asse">
+                          <div class="dep">
+                            <h4>Premenstrual dysphoric disorder</h4>
+                            <h3 id="predd">: 60%</h3>
+                            <button onclick="toggleTable('table7')">Details</button>
+                          </div>
+                          <div id="table7" class="table-container">
+                            <p>
+                              This is a type of depression that occurs in the week or two before a woman's menstrual
+                              period. Symptoms of PMDD can include mood swings, irritability, anxiety, and depression.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Depression Type 8 -->
+                      <div class="asse">
+                        <div class="dep">
+                          <h4>Atypical depression</h4>
+                          <h3 id="ad">: 60%</h3>
+                          <button onclick="toggleTable('table8')">Details</button>
+                        </div>
+                        <div id="table8" class="table-container">
+                          <p>
+                            This is a type of depression that is characterized by symptoms that are different from
+                            those of typical depression. For example, people with atypical depression may experience
+                            weight gain, increased appetite, and hypersensitivity to rejection.
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- Depression Type 9 -->
+                      <div class="asse">
+                        <div class="dep">
+                          <h4>Situational depression</h4>
+                          <h3 id="sd">: 60%</h3>
+                          <button onclick="toggleTable('table9')">Details</button>
+                        </div>
+                        <div id="table9" class="table-container">
+                          <p>
+                            This is a type of depression that is caused by a specific life event, such as the death of a
+                            loved one, a job loss, or a divorce. Situational depression usually resolves on its own
+                            within a few months, but it may require treatment if it lasts longer than that.
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- Depression Type 10 -->
+                      <div class="asse">
+                        <div class="dep">
+                          <h4 style="margin-left: none;">Disruptive mood dysregulation</h4>
+                          <h3 id="dmdd">: 60%</h3>
+                          <button onclick="toggleTable('table10')">Details</button>
+                        </div>
+                        <div id="table10" class="table-container">
+                          <p>
+                            This is a mental health condition that is characterized by chronic irritability and frequent
+                            anger outbursts in children and adolescents. DMDD can cause significant problems in a
+                            child's life, including academic difficulties, social problems, and aggressive behavior
+                          </p>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="manas">
+                  <h1 style="display: flex; width: 100%; justify-content: center;">Counseling Service.</h1>
+                  <br>
+                  <p style="font-size: large;">If you are concerned about your results or would like to speak with a professional for counseling, please choose one of the following options:</p>
+
+                <div class="call" style="display: flex; width: 100%;">
+                    <button class="blue blue1"><a style="color: inherit;" href="/nearyou">Find Counselor near you</a></button>
+                  
+                    <button class="blue blue2"><a style="color: inherit;"  href="/appointment">Get online
+                        appointment</a></button>
+                  </div></div>
+                  
+
+                <div class="manas" style="background-color: #e7e7e7;">
+                  <h1 style="display: flex; width: 100%; justify-content: center;">Not sure about your Answers?</h1>
+                  <br>
+                  <p style="font-size: larger;">
+                    If you are not sure about your answers or want to change it then follow the link below. You can also
+                    check your improved lifestyle after the span of atleast two weeks. Remember, it can only help you,
+                    if you are true to it.</p>
+                  <div style="display: flex; justify-content: center; margin-top: 20px;margin-bottom: 20px;">
+                    <a class="blue" href="/Mental-Health-Test">Give Assessment Again</a></button>
+                  </div>
+                </div>
+                <div class="manas" >
+                  <h1 style="display: flex; width: 100%; justify-content: center;">Emergency Helpline Number</h1>
+                  <br>
+                  <p style="font-size: larger;">
+                    If you are facing any severe mental health issues that needs immediate attention.Tele MANAS is a
+                    comprehensive goverment mental health care service.
+                    You can dial the Toll free numbers below to get in touch with their Counsellor.Visit <a
+                      href="https://telemanas.mohfw.gov.in/">https://telemanas.mohfw.gov.in/</a> to know more.</p>
+                  <div class="call" style="display: flex; width: 100%;">
+                    <a class="blue blue1" href="tel:14416">Call 14416</a>
+                    <p style="margin: auto; font-size: larger;">OR</p> <a class="blue blue2"
+                      href="tel:1-800 891 4416">Call 1-800 891 4416</a>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h3>Mindpath</h3>
+              <p>
+                A108 Adam Street <br>
+                Lucknow, UP 226016<br>
+                India <br><br>
+                <strong>Phone:</strong> +91 9120891486<br>
+                <strong>Email:</strong> mindpathmentalhealth@gmail.com<br>
+              </p>
+            </div>
+
+            <div class="col-lg-2 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Services</h4>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Lifestyle</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Mental health</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Articles</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">chatbot</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">assessment</a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-6 footer-newsletter">
+              <h4>Join Our Newsletter</h4>
+              <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+              <form action="" method="post">
+                <input type="email" name="email"><input type="submit" value="Subscribe">
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+
+        <div class="copyright-wrap d-md-flex py-4">
+          <div class="me-md-auto text-center text-md-start">
+            <div class="copyright">
+              &copy; Copyright <strong><span>mindpath</span></strong>. All Rights Reserved
+            </div>
+            <div class="social-links text-center text-md-right pt-3 pt-md-0">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+        </div>
+    </footer><!-- End Footer -->
+
+    <script>
+      function toggleTable(id) {
+        var table = document.getElementById(id);
+        var computedStyle = window.getComputedStyle(table); // Get the computed style
+
+        if (computedStyle.display === "none") {
+          table.style.display = "block"; // If computed style is 'none', set to 'block'
+        } else {
+          table.style.display = "none"; // Otherwise, set to 'none'
+        }
+      }
+
+    </script>
+    
+    <!-- ======= End Personal Detail pop-up ======= -->
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="../static/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="../static/vendor/aos/aos.js"></script>
+    <script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="../static/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../static/vendor/php-email-form/validate.js"></script>
+
+    <!--login icons-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+    <!-- Template Main JS File -->
+    <script type="module" src="../static/js/assessment1Script.js"></script>
+    <script src="../static/js/assessment1Main.js"></script>
+
+    <!-- ... (your other imports) ... -->
+
+
+
+
+</body>
+
+</html>

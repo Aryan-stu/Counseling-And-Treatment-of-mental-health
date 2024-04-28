@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>MindPath-Index</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="../static/img/favicon.png" rel="icon">
+    <link href="../static/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="../static/vendor/aos/aos.css" rel="stylesheet">
+    <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="../static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="../static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="../static/css/LAssessmentStyle.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top header-inner-pages ">
+        <div class="container d-flex align-items-center justify-content-between">
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto" href="/">Home</a></li>
+                    <li><a class="nav-link scrollto" href="/#about">About</a></li>
+                    <li><a class="nav-link scrollto" href="/#services">Services</a></li>
+                    <li><a class="nav-link scrollto " href="/#testimonials">Testimonials</a></li>
+                    <!--li><a class="nav-link scrollto" href="#pricing">Subscribtions</a></li-->
+                    <li class="dropdown"><a href="#"><span>Products</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li class="dropdown"><a href="/"><span>Resources</span> <i
+                                        class="bi bi-chevron-right"></i></a>
+                                <ul>
+                                    <li><a href="/bot">Sage-Bot</a></li>
+                                    <li><a href="/">Articles and Info</a></li>
+                                    <li><a href="/">Assessment Tools</a></li>
+                                    <li><a href="/">Other Contacts</a></li>
+                                    <li><a href="/">Crisis Helpline</a></li>
+                                </ul>
+                            <li class="dropdown"><a href="#"><span>Management</span> <i
+                                        class="bi bi-chevron-right"></i></a>
+                                <ul>
+                                    <li><a href="#">Track Habits</a></li>
+                                    <li><a href="#">Symptoms Report</a></li>
+                                    <li><a href="#">Book Sessions</a></li>
+                                    <li><a href="#">therapy methods</a></li>
+                                    <li><a href="#">wellness resources</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Daily Diary</a></li>
+                            <li><a href="#">Feedback</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+
+            </nav><!-- .navbar -->
+            <h1 class="logo"><a href="/">MindPath</a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="/" class="logo"><img src="../static/img/logo.png" alt="" class="img-fluid"></a>-->
+            <nav class="navba">
+                <ul>
+                    <!--li class="getstart out" id="signOutBtn">SIGNOUT</li-->
+                    <li class="btnLogin-popup getstart in" id="login">LOGIN</li>
+                    <li class="out"><img class="profile" id="menuButton" src="../static/img/user-profile.png" alt="">
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header><!-- End Header -->
+    <main id="main">
+        <section class="breadcrumbs">
+            <div class="container">
+
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2>Symptom Assessment Test</h2>
+                    <ol>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/Mental-Health">Symptom Assessment</a></li>
+                        <li></a>Symptom Assessment Test</li>
+                    </ol>
+                </div>
+
+            </div>
+        </section><!-- End Breadcrumbs -->
+
+        <section class="inner-page">
+            <!-- ======= LOGIN popup ======= -->
+            <div class="wrapper2">
+                <span class="icon-close2">
+                    <ion-icon name="close"></ion-icon>
+                </span>
+                <div class="form-box">
+                    <h3>Enter Email to reset</h3>
+                    <form action="#" id="MainForm2">
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                            <input type="email" class="snd" id="emailInp2" placeholder="Email" required>
+                            <button type="submit" class="btn">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="wrapper">
+                <span class="icon-close">
+                    <ion-icon name="close"></ion-icon>
+                </span>
+                <div class="form-box log">
+                    <h2>LOGIN</h2>
+                    <form action="#" id="MainForm">
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                            <input type="email" id="emailInp" placeholder="Email" required>
+
+                        </div>
+                        <div class="input-box">
+                            <span class="icon" onclick="pass()"><ion-icon name="lock-closed"
+                                    id="pass-icon"></ion-icon></span>
+                            <input type="password" id="passwordInp" placeholder="Password" required>
+                        </div>
+                        <div class="remember-forgot">
+                            <label><input type="checkbox" id="rememberMeCheckbox">Remember me</label>
+                            <label class="forgotpass forgot">Forgot Password?</label>
+                        </div>
+                        <button type="submit" class="btn" id="loginbtn">Login</button>
+                        <div class="login-register">
+                            <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="form-box register">
+                    <h2>Registration</h2>
+                    <form id="MainForm1">
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="person"></ion-icon></span>
+                            <input type="text" id="usernameInp1" placeholder="Username" required>
+
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                            <input type="email" id="emailInp1" placeholder="Email" required>
+
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><ion-icon onclick="pass1()" name="lock-closed"
+                                    id="pass-icon1"></ion-icon></span>
+                            <input type="password" id="passwordInp1" placeholder="Password" required>
+
+                        </div>
+                        <div class="remember-forgot">
+                            <label><input type="checkbox" required>I Agree to Terms & Conditions</label>
+                        </div>
+                        <button type="submit" onclick="" class="btn">Register</button>
+                        <div class="login-register">
+                            <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            <!-- End LOGIN popup -->
+            <!-- ======= User Profile ======= -->
+            <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <img id="profileImageElement" src="../static/img/user-profile.png" alt="Profile Image">
+                        <h3 id="names">[Username]</h3>
+                    </div>
+                    <hr>
+                    <a href="/user-profile" class="sub-menu-link">
+                        <img src="../static/img/profile.png" alt="">
+                        <p>Edit Profile</p>
+                        <span>></span>
+                    </a>
+                    <a href="/" class="sub-menu-link">
+                        <img src="../static/img/setting.png" alt="">
+                        <p>Settings</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <img src="../static/img/help.png" alt="">
+                        <p>Help</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <img src="../static/img/logout.png" alt="">
+                        <p id="signOutBtn">Logout</p>
+                        <span>></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <div class="heading">
+            <h1>Lifestyle Based Assessment Test</h1>
+            <h2>Name:</h2>
+            <h2 id="name"></h2>
+        </div>
+        <!-- Progress bar above the form -->
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div><br>
+    </main>
+
+    <!-- Form -->
+    <form id="quizForm" class="quizForm">
+        <!-- Question 1 -->
+        <div class="sec" id="sec1">
+            <h2 class="section" id="section">Section A: Depression</h2>
+            <div style="height: none; width: 100%; margin-right: 10px; border: 1px solid blueviolet;"></div>
+            <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+
+                <p class="que">How often do you find yourself feeling somewhat down or in the sense of
+                    hopelessness?</p>
+                <div class="options">
+                    <label class="custom-radio" for="answer1a"><input type="radio" name="answer1" id="answer1a"
+                            value="never" data-value="0" required> never<span class="checkmark"></span></label>
+                    <label class="custom-radio" for="answer1b"><input type="radio" name="answer1" id="answer1b"
+                            value="Occasionally" data-value="3"> occasionally<span class="checkmark"></span></label>
+                    <label class="custom-radio" for="answer1c"><input type="radio" name="answer1" id="answer1c"
+                            value="Regularly" data-value="6"> Regularly<span class="checkmark"></span></label>
+                </div>
+
+
+
+
+                <div style="height: none; width: 100%; margin-right: 10px; border: 1px solid blueviolet;"></div>
+
+
+                <p class="que">How often do you experience difficulties with your sleep patterns?</p>
+                <div class="options">
+                    <label class="custom-radio" for="answer2a"><input type="radio" name="answer2" id="answer2a"
+                            value="never" data-value="0" required> never<span class="checkmark"></span></label>
+                    <label class="custom-radio" for="answer2b"><input type="radio" name="answer2" id="answer2b"
+                            value="Occasionally" data-value="2"> occasionally<span class="checkmark"></span></label>
+                    <label class="custom-radio" for="answer2c"><input type="radio" name="answer2" id="answer2c"
+                            value="Regularly" data-value="4"> Regularly<span class="checkmark"></span></label>
+                </div>
+
+
+
+                <div style="height: none; width: 100%; margin-right: 10px; border: 1px solid blueviolet;"></div>
+
+
+                <p class="que">Have you noticed temporary changes in your eating habits that concern you?</p>
+                <div class="options">
+                    <label class="custom-radio" for="answer3a"><input type="radio" name="answer3" id="answer3a"
+                            value="never" data-value="0" required> never<span class="checkmark"></span></label>
+                    <label class="custom-radio" for="answer3b"><input type="radio" name="answer3" id="answer3b"
+                            value="Occasionally" data-value="1"> occasionally<span class="checkmark"></span></label>
+                    <label class="custom-radio" for="answer3c"><input type="radio" name="answer3" id="answer3c"
+                            value="Regularly" data-value="2"> Regularly<span class="checkmark"></span></label>
+                </div>
+
+
+                <div style="height: none; width: 100%; margin-right: 10px; border: 1px solid blueviolet;"></div>
+
+
+                <p class="que">Do you find it challenging to concentrate or focus on tasks?</p>
+                <div class="options">
+                    <label class="custom-radio" for="answer4a"><input type="radio" name="answer4" id="answer4a"
+                            value="never" data-value="0" required> never<span class="checkmark"></span></label>
+                    <label class="custom-radio" for="answer4b"><input type="radio" name="answer4" id="answer4b"
+                            value="Occasionally" data-value="2"> occasionally<span class="checkmark"></span></label>
+                    <label class="custom-radio" for="answer4c"><input type="radio" name="answer4" id="answer4c"
+                            value="Regularly" data-value="4"> Regularly<span class="checkmark"></span></label>
+                </div>
+
+
+                <div style="height: none; width: 100%; margin-right: 10px; border: 1px solid blueviolet;"></div>
+
+
+                <p class="que">How often do thoughts of giving up or any other related thoughts cross your
+                    mind?</p>
+                <div class="options">
+                    <label class="custom-radio" for="answer5a"><input type="radio" name="answer5" id="answer5a"
+                            value="never" data-value="0" required> never<span class="checkmark"></span></label>
+                    <label class="custom-radio" for="answer5b"><input type="radio" name="answer5" id="answer5b"
+                            value="Occasionally" data-value="1"> occasionally<span class="checkmark"></span></label>
+                    <label class="custom-radio" for="answer5c"><input type="radio" name="answer5" id="answer5c"
+                            value="Regularly" data-value="2"> Regularly<span class="checkmark"></span></label>
+                </div>
+
+
+                <div style="height: none; width: 100%; margin-right: 10px; border: 1px solid blueviolet;"></div>
+
+
+                <p class="que">Have you noticed any changes in your energy levels that worry you?</p>
+                <div class="options">
+                    <label class="custom-radio" for="answer6a"><input type="radio" name="answer6" id="answer6a"
+                            value="never" data-value="0" required> never<span class="checkmark"></span></label>
+                    <label class="custom-radio" for="answer6b"><input type="radio" name="answer6" id="answer6b"
+                            value="Occasionally" data-value="1"> occasionally<span class="checkmark"></span></label>
+                    <label class="custom-radio" for="answer6c"><input type="radio" name="answer6" id="answer6c"
+                            value="Regularly" data-value="2"> Regularly<span class="checkmark"></span></label>
+                </div>
+
+
+                <div style="height: none; width: 100%; margin-right: 10px; border: 1px solid blueviolet;"></div>
+
+
+                <p class="que">Have you noticed any significant changes in your mood that concern
+                    you?</p>
+                <div class="options">
+                    <label class="custom-radio" for="answer7a"><input type="radio" name="answer7" id="answer7a"
+                            value="never" data-value="0" required> never<span class="checkmark"></span></label>
+                    <label class="custom-radio" for="answer7b"><input type="radio" name="answer7" id="answer7b"
+                            value="Occasionally" data-value="1"> occasionally<span class="checkmark"></span></label>
+                    <label class="custom-radio" for="answer7c"><input type="radio" name="answer7" id="answer7c"
+                            value="Regularly" data-value="2"> Regularly<span class="checkmark"></span></label>
+                </div>
+                <div style="height: none; width: 100%; margin-right: 10px; border: 1px solid blueviolet;"></div>
+                <button style="margin-top: 30px; font-size: larger;" type="button" class="next"
+                onclick="nextQuestion()">Next</button>
+                <div style="padding: 30px;"></div>
+        </div>
+        </div>
+
+
+
+        <div class="sec" id="sec2">
+            <div style="height: none; width: 100%; margin-right: 10px; border: 1px solid blueviolet;"></div>
+            <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <p class="que">Are you currently experiencing unusual thoughts or sensations that others don't,
+                like delusions or hallucinations?</p>
+            <div class="options">
+                <label class="custom-radio" for="answer8a"><input type="radio" name="answer8" id="answer8a"
+                        value="never" data-value="0" required> never<span class="checkmark"></span></label>
+                <label class="custom-radio" for="answer8b"><input type="radio" name="answer8" id="answer8b"
+                        value="Occasionally" data-value="1"> occasionally<span class="checkmark"></span></label>
+                <label class="custom-radio" for="answer8c"><input type="radio" name="answer8" id="answer8c"
+                        value="Regularly" data-value="2"> Regularly<span class="checkmark"></span></label>
+            </div>
+
+            <div style="height: none; width: 100%; margin-right: 10px; border: 1px solid blueviolet;"></div>
+
+
+            <p class="que">Do you find yourself frequently irritable or having sudden bursts of anger?</p>
+            <div class="options">
+                <label class="custom-radio" for="answer9a"><input type="radio" name="answer9" id="answer9a"
+                        value="never" data-value="0" required> never<span class="checkmark"></span></label>
+                <label class="custom-radio" for="answer9b"><input type="radio" name="answer9" id="answer9b"
+                        value="Occasionally" data-value="1"> occasionally<span class="checkmark"></span></label>
+                <label class="custom-radio" for="answer9c"><input type="radio" name="answer9" id="answer9c"
+                        value="Regularly" data-value="2"> Regularly<span class="checkmark"></span></label>
+            </div>
+
+            <div style="height: none; width: 100%; margin-right: 10px; border: 1px solid blueviolet;"></div>
+
+            <p class="que">Have you noticed a significant and concerning increase in your weight recently?
+            </p>
+            <div class="options">
+                <label class="custom-radio" for="answer10a"><input type="radio" name="answer10" id="answer10a"
+                        value="never" data-value="0" required> never<span class="checkmark"></span></label>
+                <label class="custom-radio" for="answer10b"><input type="radio" name="answer10" id="answer10b"
+                        value="Occasionally" data-value="1"> occasionally<span class="checkmark"></span></label>
+                <label class="custom-radio" for="answer10c"><input type="radio" name="answer10" id="answer10c"
+                        value="Regularly" data-value="2"> Regularly<span class="checkmark"></span></label>
+            </div>
+
+            <div style="height: none; width: 100%; margin-right: 10px; border: 1px solid blueviolet;"></div>
+
+
+            <p class="que">Do you often feel extremely sensitive or hurt by perceived rejection from
+                others?</p>
+            <div class="options">
+                <label class="custom-radio" for="answer11a"><input type="radio" name="answer11" id="answer11a"
+                        value="never" data-value="0" required> never<span class="checkmark"></span></label>
+                <label class="custom-radio" for="answer11b"><input type="radio" name="answer11" id="answer11b"
+                        value="Occasionally" data-value="1"> occasionally<span class="checkmark"></span></label>
+                <label class="custom-radio" for="answer11c"><input type="radio" name="answer11" id="answer11c"
+                        value="Regularly" data-value="2"> Regularly<span class="checkmark"></span></label>
+            </div>
+
+            <div style="height: none; width: 100%; margin-right: 10px; border: 1px solid blueviolet;"></div>
+
+            <p class="que">Do you notice changes in your mood or energy levels during the winter months or
+                when exposed to less sunlight?</p>
+            <div class="options">
+                <label class="custom-radio" for="answer12a"><input type="radio" name="answer12" id="answer12a"
+                        value="never" data-value="0" required> never<span class="checkmark"></span></label>
+                <label class="custom-radio" for="answer12b"><input type="radio" name="answer12" id="answer12b"
+                        value="Occasionally" data-value="1"> occasionally<span class="checkmark"></span></label>
+                <label class="custom-radio" for="answer12c"><input type="radio" name="answer12" id="answer12c"
+                        value="Regularly" data-value="2"> Regularly<span class="checkmark"></span></label>
+            </div>
+
+            <div style="height: none; width: 100%; margin-right: 10px; border: 1px solid blueviolet;"></div>
+
+
+            <p class="que">Have you recently experienced a traumatic life event, such as loss, violence, or
+                a major life change?</p>
+            <div class="options">
+                <label class="custom-radio" for="answer13a"><input type="radio" name="answer13" id="answer13a"
+                        value="never" data-value="0" required> never<span class="checkmark"></span></label>
+                <label class="custom-radio" for="answer13b"><input type="radio" name="answer13" id="answer13b"
+                        value="Occasionally" data-value="1"> occasionally<span class="checkmark"></span></label>
+                <label class="custom-radio" for="answer13c"><input type="radio" name="answer13" id="answer13c"
+                        value="Regularly" data-value="2"> Regularly<span class="checkmark"></span></label>
+            </div>
+
+            <div style="height: none; width: 100%; margin-right: 10px; border: 1px solid blueviolet;"></div>
+
+
+            <p class="que">Have you recently given birth or experienced a significant change related to
+                childbirth?</p>
+            <div class="options">
+                <label class="custom-radio" for="answer14a"><input type="radio" name="answer14" id="answer14a"
+                        value="never" data-value="0"> never<span class="checkmark"></span></label>
+                <label class="custom-radio" for="answer14b"><input type="radio" name="answer14" id="answer14b"
+                        value="Occasionally" data-value="1"> occasionally<span class="checkmark"></span></label>
+                <label class="custom-radio" for="answer14c"><input type="radio" name="answer14" id="answer14c"
+                        value="Regularly" data-value="2"> Regularly<span class="checkmark"></span></label>
+            </div>
+            <div style="height: none; width: 100%; margin-right: 10px; border: 1px solid blueviolet;"></div>
+            <div class="buttons">
+                <button type="button" class="prev" onclick="prevQuestion()">Previous</button>
+                <button type="button" class="next" onclick="nextQuestion1()">Next</button>
+            </div><div style="padding: 30px;"></div>
+        </div></div>
+
+        <!-- Submit button -->
+        <div id="submitSection">
+            <table id="answersTable" border="1.0">
+                <thead>
+                    <tr>
+                        <th>Symptom</th>
+                        <th>Answer</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Feeling a bit low</td>
+                        <td id="ans1"></td>
+
+                    </tr>
+                    <tr>
+                        <td> Disruptions in sleep</td>
+                        <td id="ans2"></td>
+
+                    </tr>
+                    <tr>
+                        <td> Changes in appetite</td>
+                        <td id="ans3"></td>
+
+                    </tr>
+                    <tr>
+                        <td>Finding it hard to focus</td>
+                        <td id="ans4"></td>
+
+                    </tr>
+                    <tr>
+                        <td>Thinking about death</td>
+                        <td id="ans5"></td>
+
+                    </tr>
+                    <tr>
+                        <td>Changes in energy</td>
+                        <td id="ans6"></td>
+
+                    </tr>
+                    <tr>
+                        <td>Mood swings</td>
+                        <td id="ans7"></td>
+
+                    </tr>
+                    <tr>
+                        <td>Delusions and hallucinations</td>
+                        <td id="ans8"></td>
+
+                    </tr>
+                    <tr>
+                        <td> irritability and anger outbursts</td>
+                        <td id="ans9"></td>
+
+                    </tr>
+                    <tr>
+                        <td> Weight gain</td>
+                        <td id="ans10"></td>
+
+                    </tr>
+                    <tr>
+                        <td>Hypersensitivity to rejection</td>
+                        <td id="ans11"></td>
+
+                    </tr>
+                    <tr>
+                        <td>Winter/Less Sunlight</td>
+                        <td id="ans12"></td>
+
+                    </tr>
+                    <tr>
+                        <td>Traumatic Life Event</td>
+                        <td id="ans13"></td>
+
+                    </tr>
+                    <tr id="ppdt">
+                        <td>Giving Birth</td>
+                        <td id="ans14"></td>
+
+                    </tr>
+
+                </tbody>
+            </table>
+            <button type="submit" class="submit" id="submitButton">Submit</button>
+            <button type="button" class="prev" onclick="prevQuestion()">Previous</button>
+        </div>
+    </form>
+    <script>
+        let currentSec = 1;
+        const totalSecs = document.querySelectorAll('.sec').length;
+        const progressBar = document.getElementById('progressBar');
+
+        function nextQuestion() {
+            for (let i = 1; i <= 7; i++) {
+                // Check if an answer is selected for the current question
+                const selectedAnswer = document.querySelector(`input[name="answer${i}"]:checked`);
+
+                let answers = [];
+                if (!selectedAnswer) {
+                    alert(`Please select an answer for Question ${i} before proceeding.`);
+                    return;
+                }
+
+
+
+                // Set the answer for the current question
+                const answer = selectedAnswer.value;
+
+
+                // Save the answer for the current question
+                answers[i - 1] = { answer };
+
+                // Display the selected answer for the current question
+                document.getElementById(`ans${i}`).textContent = answer;
+
+
+                // Hide the current question
+
+            }
+            // Increment currentSec and update progress bar
+            document.getElementById(`sec1`).style.display = 'none';
+            currentSec++;
+            updateProgressBar();
+
+            // Check if there are more questions or if it's time to display the submit section
+            if (currentSec <=totalSecs) {
+                const nextQuestionElement = document.getElementById(`sec2`);
+                nextQuestionElement.style.display = 'block';
+            } else {
+                document.getElementById('submitSection').style.display = 'block';
+            }
+            document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0;
+        }
+        function nextQuestion1() {
+            for (let i = 8; i <= 14; i++) {
+                // Check if an answer is selected for the current question
+                const selectedAnswer = document.querySelector(`input[name="answer${i}"]:checked`);
+
+                let answers = [];
+                if (!selectedAnswer) {
+                    alert(`Please select an answer for Question ${i-6} before proceeding.`);
+                    return;
+                }
+
+
+
+                // Set the answer for the current question
+                const answer = selectedAnswer.value;
+
+
+                // Save the answer for the current question
+                answers[i - 1] = { answer };
+
+                // Display the selected answer for the current question
+                document.getElementById(`ans${i}`).textContent = answer;
+
+
+                // Hide the current question
+
+            }
+            // Increment currentSec and update progress bar
+            document.getElementById(`sec2`).style.display = 'none';
+            currentSec++;
+            updateProgressBar();
+
+            // Check if there are more questions or if it's time to display the submit section
+            if (currentSec <=totalSecs) {
+                const nextQuestionElement = document.getElementById(`sec2`);
+                nextQuestionElement.style.display = 'block';
+            } else {
+                document.getElementById('submitSection').style.display = 'block';
+            }
+            document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0;
+        }
+
+
+        function prevQuestion() {
+            if (currentSec === totalSecs + 1) {
+                // If currently on the submit section, go back to the last question
+                document.getElementById('submitSection').style.display = 'none';
+                currentSec = totalSecs;
+                const currentSecElement = document.getElementById(`sec${currentSec}`);
+                currentSecElement.style.display = 'none';
+                updateProgressBar();
+            } else {
+
+                const currentSecElement = document.getElementById(`sec${currentSec}`);
+                currentSecElement.style.display = 'none';
+
+                currentSec--;
+                updateProgressBar();
+            }
+            if (currentSec >= 1) {
+                const prevQuestionElement = document.getElementById(`sec${currentSec}`);
+                prevQuestionElement.style.display = 'block';
+            }
+            document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0;
+
+        }
+
+
+        function updateProgressBar() {
+            const progressPercentage = ((currentSec) / (totalSecs + 1)) * 100;
+            progressBar.style.width = `${progressPercentage}%`;
+        }
+
+        // Display the first question initially and update the progress bar
+        document.getElementById('sec1').style.display = 'block';
+        updateProgressBar();
+
+        document.getElementById('quizForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Iterate over each question and get the user's answer
+            for (let i = 1; i <= totalSecs; i++) {
+                const answer = document.querySelector(`input[name="answer${i}"]:checked`).value;
+                document.getElementById(`ans${i}`).textContent = answer;
+            }
+        });
+    </script>
+
+    <script type="module" src="../static/js/MAssessmentScript.js"></script>
+    <script src="../static/js/MAssessmentMain.js"></script>
+</body>
+
+</html>

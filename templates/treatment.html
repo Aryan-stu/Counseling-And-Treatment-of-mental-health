@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>MindPath-Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../static/img/favicon.png" rel="icon">
+  <link href="../static/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../static/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../static/css/treatmentStyle.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class=" fixed-top header-inner-pages ">
+    <div>
+      <div class=" container d-flex align-items-center justify-content-between">
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto" href="/">Home</a></li>
+            <li><a class="nav-link scrollto" href="/#about">About</a></li>
+            <li><a class="nav-link scrollto" href="/#services">Services</a></li>
+            <li><a class="nav-link scrollto " href="/#testimonials">Testimonials</a></li>
+            <!--li><a class="nav-link scrollto" href="#pricing">Subscribtions</a></li-->
+            <li class="dropdown"><a href="#"><span>Products</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li class="dropdown"><a href="/"><span>Resources</span> <i
+                      class="bi bi-chevron-right"></i></a>
+                  <ul>
+                    <li><a href="/#hero">Sage-Bot</a></li>
+                    <li><a href="/#info">Articles and Info</a></li>
+                    <li><a href="/#tools">Assessment Tools</a></li>
+                    <li><a href="/#others">Other Contacts</a></li>
+                    <li><a href="/#crisis">Crisis Helpline</a></li>
+                  </ul>
+                <li class="dropdown"><a href="#"><span>Management</span> <i class="bi bi-chevron-right"></i></a>
+                  <ul>
+                    <li><a href="#">Track Habits</a></li>
+                    <li><a href="#">Symptoms Report</a></li>
+                    <li><a href="#">Book Sessions</a></li>
+                    <li><a href="#">therapy methods</a></li>
+                    <li><a href="#">wellness resources</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Daily Diary</a></li>
+                <li><a href="#">Feedback</a></li>
+              </ul>
+            </li>
+            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+
+        </nav><!-- .navbar -->
+        <h1 class="logo"><a href="/">MindPath</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="/" class="logo"><img src="../static/img/logo.png" alt="" class="img-fluid"></a>-->
+        <nav class="navba">
+          <ul>
+            <!--li class="getstart out" id="signOutBtn">SIGNOUT</li-->
+            <li class="btnLogin-popup getstart in" id="login">LOGIN</li>
+            <li class="out"><img class="profile" id="menuButton" src="../static/img/user-profile.png" alt=""></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="options" style=" width: 100%; margin-top: 20px; margin-bottom: -12px;">
+        <!--div class="tab-option active" onclick="openTab('tab1')">Main</div-->
+        <div class="tab-option active" onclick="openTab('tab2')">Diet</div>
+        <div class="tab-option" onclick="openTab('tab3')">Exersice</div>
+        <div class="tab-option" onclick="openTab('tab4')">Addiction</div>
+        <div class="tab-option" onclick="openTab('tab5')">Sleep</div>
+        <div class="tab-option" onclick="openTab('tab6')">Socialise</div>
+        <div class="tab-option" onclick="openTab('tab7')">Stress</div>
+        <div class="tab-option" onclick="openTab('tab8')">Screens</div>
+      </div>
+    </div>
+  </header><!-- End Header -->
+  <main id="main">
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Lifestyle Improvement</h2>
+          <ol>
+            <li><a href="/">Home</a></li>
+            <li><a href="/Lifestyle">Lifestyle Assessment</a></li>
+            <li>Lifestyle Improvement</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <section class="inner-page">
+      <!-- ======= LOGIN popup ======= -->
+      <div class="wrapper2">
+        <span class="icon-close2">
+          <ion-icon name="close"></ion-icon>
+        </span>
+        <div class="form-box">
+          <h3>Enter Email to reset</h3>
+          <form action="#" id="MainForm2">
+            <div class="input-box">
+              <span class="icon"><ion-icon name="mail"></ion-icon></span>
+              <input type="email" class="snd" id="emailInp2" placeholder="Email" required>
+              <button type="submit" class="btn">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="wrapper">
+        <span class="icon-close">
+          <ion-icon name="close"></ion-icon>
+        </span>
+        <div class="form-box log">
+          <h2>LOGIN</h2>
+          <form action="#" id="MainForm">
+            <div class="input-box">
+              <span class="icon"><ion-icon name="mail"></ion-icon></span>
+              <input type="email" id="emailInp" placeholder="Email" required>
+
+            </div>
+            <div class="input-box">
+              <span class="icon" onclick="pass()"><ion-icon name="lock-closed" id="pass-icon"></ion-icon></span>
+              <input type="password" id="passwordInp" placeholder="Password" required>
+            </div>
+            <div class="remember-forgot">
+              <label><input type="checkbox" id="rememberMeCheckbox">Remember me</label>
+              <label class="forgotpass forgot">Forgot Password?</label>
+            </div>
+            <button type="submit" class="btn" id="loginbtn">Login</button>
+            <div class="login-register">
+              <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+            </div>
+          </form>
+        </div>
+
+        <div class="form-box register">
+          <h2>Registration</h2>
+          <form id="MainForm1">
+            <div class="input-box">
+              <span class="icon"><ion-icon name="person"></ion-icon></span>
+              <input type="text" id="usernameInp1" placeholder="Username" required>
+
+            </div>
+            <div class="input-box">
+              <span class="icon"><ion-icon name="mail"></ion-icon></span>
+              <input type="email" id="emailInp1" placeholder="Email" required>
+
+            </div>
+            <div class="input-box">
+              <span class="icon"><ion-icon onclick="pass1()" name="lock-closed" id="pass-icon1"></ion-icon></span>
+              <input type="password" id="passwordInp1" placeholder="Password" required>
+
+            </div>
+            <div class="remember-forgot">
+              <label><input type="checkbox" required>I Agree to Terms & Conditions</label>
+            </div>
+            <button type="submit" onclick="" class="btn">Register</button>
+            <div class="login-register">
+              <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+            </div>
+          </form>
+        </div>
+
+      </div>
+      <!-- End LOGIN popup -->
+      <!-- ======= User Profile ======= -->
+      <div class="sub-menu-wrap" id="subMenu">
+        <div class="sub-menu">
+          <div class="user-info">
+            <img id="profileImageElement" src="../static/img/user-profile.png" alt="Profile Image">
+            <h3 id="name">[Username]</h3>
+          </div>
+          <hr>
+          <a href="/user-profile" class="sub-menu-link">
+            <img src="../static/img/profile.png" alt="">
+            <p>Edit Profile</p>
+            <span>></span>
+          </a>
+          <a href="/" class="sub-menu-link">
+            <img src="../static/img/setting.png" alt="">
+            <p>Settings</p>
+            <span>></span>
+          </a>
+          <a href="#" class="sub-menu-link">
+            <img src="../static/img/help.png" alt="">
+            <p>Help</p>
+            <span>></span>
+          </a>
+          <a href="#" class="sub-menu-link">
+            <img src="../static/img/logout.png" alt="">
+            <p id="signOutBtn">Logout</p>
+            <span>></span>
+          </a>
+        </div>
+      </div>
+      <!-- End User profile -->
+      <!-- Treatment Section -->
+      <style>
+        #container {
+          margin-top: 50px;
+          min-height: 500px;
+        }
+
+        #right-frame {
+          display: flex;
+          width: 100%;
+          min-height: 100vh;
+
+        }
+
+
+
+        .tab-container {
+          margin-top: 20px;
+
+          width: 100%;
+        }
+
+        .tab-option {
+          display: inline-block;
+          color: white;
+          text-align: center;
+          padding: 10px;
+          cursor: pointer;
+          border-top: none;
+          border-bottom: none;
+          background-color: inherit;
+        }
+
+        .tab-option.active {
+          background-color: white;
+          color: black;
+        }
+
+        .tab-content {
+          display: none;
+          width: 100%;
+
+
+        }
+
+        .options {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+        }
+
+        .video-container {
+          display: flex;
+          position: relative;
+          width: 60%;
+          /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+          padding-bottom: 37.5%;
+          /* (9 / 16) * 100 */
+          height: 0;
+          margin: 20px auto;
+        }
+
+        .video-container iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+
+        }
+
+        .navigation {
+          display: flex;
+          justify-content: center;
+          margin-top: 10px;
+        }
+
+        .bullet,
+        .bullet1,
+        .bullet2,
+        .bullet3 {
+          height: 20px;
+          width: 20px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          margin: 0 5px;
+          cursor: pointer;
+        }
+
+        @media screen and (max-width: 768px) {
+          .desc {
+            display: flex;
+            flex-direction: column-reverse;
+          }
+
+          .desc p {
+            font-size: 20px;
+          }
+
+          .desc h2 {
+            font-size: 25px;
+          }
+        }
+
+        .desc {
+          background: linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 214, 0.9) 100%), url("../img/hero-bg.jpg") center center no-repeat;
+          color: white;
+          padding-left: 10%;
+          padding-right: 10%;
+          padding-bottom: 20px;
+          min-height: 50vh;
+          display: flex;
+          align-items: center;
+          margin-top: -20px;
+        }
+
+        .vid {
+          padding-left: 5%;
+
+          padding-top: 20px;
+
+        }
+
+        .bullet.active {
+          background-color: rgba(116, 15, 214);
+        }
+
+        .tra {
+          padding-left: 10%;
+        }
+      </style>
+      <section id="hero container" class=" align-items-center">
+
+        <div class="tab-container" style="width: 100%;">
+
+          <div id="right-frame">
+            <div id="tab1" class="tab-content" style="display: none;">
+              Content for Main
+            </div>
+            <div id="tab2" class="tab-content" style="display:block;">
+              <div class="desc">
+                <div>
+                  <h2 style="margin-bottom: 40px;">Fuel Your Mind with the Right Diet!</h2>
+                  <p>Each meal you eat can be a choice to stabilize your mood, enhance your focus, and increase your
+                    mental resilience. Start transforming your life one plate at a time! Embrace a diet that supports
+                    your brain function and watch as it uplifts your overall well-being. Remember, by nourishing your
+                    body, you're also nurturing your mind. Make that powerful choice today and step into a brighter,
+                    healthier mental state!</p>
+                </div>
+                <div>
+                  <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                    type="module"></script>
+
+                  <dotlottie-player src="https://lottie.host/f8d54017-100b-45f2-94bb-9fd190ed8042/MHPq1bSin0.json"
+                    background="transparent" speed="1" style=" width: 400px; height: 400px;" loop
+                    autoplay></dotlottie-player>
+                </div>
+              </div>
+              <div>
+                <h2 class="vid">For your motivation and learning:</h2>
+                <div class="video-container">
+
+                  <iframe id="videoFrame1" src="https://www.youtube.com/embed/Q4yUlJV31Rk" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+                <div class="navigation">
+                  <span class="bullet bullet1 active" onclick="changeVideo(event,'Q4yUlJV31Rk','videoFrame1')"></span>
+                  <span class="bullet bullet2" onclick="changeVideo(event,'fqhYBTg73fw','videoFrame1')"></span>
+                  <span class="bullet bullet3" onclick="changeVideo(event,'w4rliwLNffo','videoFrame1')"></span>
+                </div>
+              </div>
+              <div class="manas" style="background-color: #e7e7e7;">
+                <h1 style="display: flex; width: 100%; justify-content: center;">Trackers and Reminders</h1>
+                <br>
+                <p style="font-size: larger;">
+                  Track any relevant habit or set a remimder to help you.</p>
+                <div style="display: flex; justify-content: center; margin-top: 20px;margin-bottom: 20px;">
+                  <a class="blue" href="/">To the habit Tracker</a></button>
+                </div>
+              </div>
+              </div>
+            <div id="tab3" class="tab-content" style="display:none;">
+              <div class="desc">
+                <div>
+                  <h2 style="margin-bottom: 40px;">Energize Your Mind Through Exercise!</h2>
+                  <p>Whether it’s a morning jog, a yoga session, or a quick workout, every movement counts. Exercise
+                    releases endorphins, often known as the body’s natural antidepressants, creating feelings of
+                    happiness and euphoria. Take charge of your mental health by making exercise a non-negotiable part
+                    of your daily routine. Step up, get moving, and unlock a vibrant, energized mental state that
+                    propels you through life’s challenges with resilience and vigor!</p>
+                </div>
+                <div>
+                  <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                    type="module"></script>
+
+                  <dotlottie-player src="https://lottie.host/84b4de88-5f9b-44eb-8cd1-7b71d07ba5da/XCDVMN0BYQ.json"
+                    background="transparent" speed="1" style="width: 400px; height: 400px;" loop
+                    autoplay></dotlottie-player>
+                </div>
+              </div>
+              <div>
+                <h2 class="vid">For your motivation and learning:</h2>
+                <div class="video-container">
+
+                  <iframe id="videoFrame2" src="https://www.youtube.com/embed/pc5uXQm7e6g" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+                <div class="navigation">
+                  <span class="bullet bullet1 active" onclick="changeVideo(event,'pc5uXQm7e6g','videoFrame2')"></span>
+                  <span class="bullet bullet2" onclick="changeVideo(event,'37UhELFvPec','videoFrame2')"></span>
+                  <span class="bullet bullet3" onclick="changeVideo(event,'BHY0FxzoKZE','videoFrame2')"></span>
+                </div>
+              </div>
+              <div class="manas" style="background-color: #e7e7e7;">
+                <h1 style="display: flex; width: 100%; justify-content: center;">Trackers and Reminders</h1>
+                <br>
+                <p style="font-size: larger;">
+                  Track any relevant habit or set a remimder to help you.</p>
+                <div style="display: flex; justify-content: center; margin-top: 20px;margin-bottom: 20px;">
+                  <a class="blue" href="/">To the habit Tracker</a></button>
+                </div>
+              </div></div>
+            <div id="tab4" class="tab-content" style="display:none;">
+              <div class="desc">
+                <div>
+                  <h2 style="margin-bottom: 40px;">Break Free from Addiction and Reclaim Your Life! </h2>
+                  <p>Addiction to substances like cigarettes and alcohol doesn't just harm your body; it enslaves your
+                    mind and spirit. Each day, these habits strip away your health, your vitality, and your freedom. But
+                    there's incredible power in choosing to break free. Embrace the journey of recovery and witness the
+                    transformation not only in your physical health but in your mental clarity and emotional well-being.
+                    Quitting now can restore your sense of control and unleash a wave of positive changes in all areas
+                    of your life. It's time to liberate yourself. Say no to addiction, say yes to a healthier, happier
+                    you!</p>
+                </div>
+                <div>
+                  <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                    type="module"></script>
+
+                  <dotlottie-player src="https://lottie.host/35e61785-f229-4f14-ac60-5a1b554b963b/MxEtY2IkI9.json"
+                    background="transparent" speed="1" style="width: 400px; height: 400px;" loop
+                    autoplay></dotlottie-player>
+                </div>
+              </div>
+              <div>
+                <h2 class="vid">For your motivation and learning:</h2>
+                <div class="video-container">
+
+                  <iframe id="videoFrame3" src="https://www.youtube.com/embed/SPvp0gecwAo" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+                <div class="navigation">
+                  <span class="bullet bullet1 active" onclick="changeVideo(event,'SPvp0gecwAo','videoFrame3')"></span>
+                  <span class="bullet bullet2" onclick="changeVideo(event,'62FYNwd-8Jo','videoFrame3')"></span>
+                  <span class="bullet bullet3" onclick="changeVideo(event,'0c2qTOMQ0Os','videoFrame3')"></span>
+                </div>
+              </div>
+              <div class="manas" style="background-color: #e7e7e7;">
+                <h1 style="display: flex; width: 100%; justify-content: center;">Trackers and Reminders</h1>
+                <br>
+                <p style="font-size: larger;">
+                  Track any relevant habit or set a remimder to help you.</p>
+                <div style="display: flex; justify-content: center; margin-top: 20px;margin-bottom: 20px;">
+                  <a class="blue" href="/">To the habit Tracker</a></button>
+                </div>
+              </div>
+            </div>
+            <div id="tab5" class="tab-content" style="display:none;">
+              <div class="desc">
+                <div>
+                  <h2 style="margin-bottom: 40px;">Embrace the Power of Sleep for a Healthier Tomorrow! </h2>
+                  <p>Good sleep is a cornerstone of health; it's as vital as nutrition and exercise. Prioritizing
+                    quality sleep every night can dramatically enhance your physical health, sharpen your mental
+                    faculties, and stabilize your emotions. When you sleep well, your body repairs itself, your brain
+                    consolidates memories, and your energy levels rejuvenate. Embrace a sleep routine that empowers you
+                    to wake up refreshed and ready to tackle the day. Make sleep your ally in achieving a vibrant,
+                    energized, and fulfilled life. Commit to your nightly rest and watch your daily life transform!
+
+                  </p>
+                </div>
+                <div>
+                  <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                    type="module"></script>
+
+                  <dotlottie-player src="https://lottie.host/c2a6cea9-5852-4d37-83a5-e6d25da26e6a/ij6Fl7OUak.json"
+                    background="transparent" speed="1" style="width: 400px; height: 400px;" loop
+                    autoplay></dotlottie-player>
+                </div>
+              </div>
+              <div>
+                <h2 class="vid">For your motivation and learning:</h2>
+                <div class="video-container">
+
+                  <iframe id="videoFrame4" src="https://www.youtube.com/embed/xxxWv6PM4EM" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+                <div class="navigation">
+                  <span class="bullet bullet1 active" onclick="changeVideo(event,'xxxWv6PM4EM','videoFrame4')"></span>
+                  <span class="bullet bullet2" onclick="changeVideo(event,'KpyoDML2eUI','videoFrame4')"></span>
+                  <span class="bullet bullet3" onclick="changeVideo(event,'JixdJZdxNnk','videoFrame4')"></span>
+                </div>
+              </div>
+              <div class="tra">
+                <p>Track any relevant habit or set a remimder to help you.</p>
+                <button><a href="//">To the habit Tracker</a></button>
+              </div>
+            </div>
+            <div id="tab6" class="tab-content" style="display:none;">
+              <div class="desc">
+                <div>
+                  <h2 style="margin-bottom: 40px;">Connect and Thrive Through Social Activities! 🤝🎉</h2>
+                  <p>Social interaction is not just fun—it's fundamental for your mental and emotional health. Engaging
+                    in social activities helps build a supportive network, reduces stress, and enhances your sense of
+                    belonging. Whether it’s joining a club, participating in community events, or simply sharing a meal
+                    with friends, every social interaction contributes to a richer, more joyful life. Embrace
+                    opportunities to connect with others, and experience how these connections can lift your spirits,
+                    inspire creativity, and foster a deep sense of community. Step out into the social sphere and enrich
+                    your life with the vibrant tapestry of shared experiences and mutual support!</p>
+                </div>
+                <div>
+                  <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                    type="module"></script>
+
+                  <dotlottie-player src="https://lottie.host/f1e2aa21-97ad-4e0e-9961-f01a6d541a52/6ODScJedMP.json"
+                    background="transparent" speed="1" style="width: 400px; height: 400px;" loop
+                    autoplay></dotlottie-player>
+                </div>
+              </div>
+              <div>
+                <h2 class="vid">For your motivation and learning:</h2>
+                <div class="video-container">
+
+                  <iframe id="videoFrame5" src="https://www.youtube.com/embed/dyjkn2JN8wE" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+                <div class="navigation">
+                  <span class="bullet bullet1 active" onclick="changeVideo(event,'dyjkn2JN8wE','videoFrame5')"></span>
+                  <span class="bullet bullet2" onclick="changeVideo(event,'f3dBPulbLSk','videoFrame5')"></span>
+                  <span class="bullet bullet3" onclick="changeVideo(event,'5Hkb6SuGR0g','videoFrame5')"></span>
+                </div>
+              </div>
+              <div class="manas" style="background-color: #e7e7e7;">
+                <h1 style="display: flex; width: 100%; justify-content: center;">Trackers and Reminders</h1>
+                <br>
+                <p style="font-size: larger;">
+                  Track any relevant habit or set a remimder to help you.</p>
+                <div style="display: flex; justify-content: center; margin-top: 20px;margin-bottom: 20px;">
+                  <a class="blue" href="/">To the habit Tracker</a></button>
+                </div>
+              </div>
+            </div>
+            <div id="tab7" class="tab-content" style="display:none;">
+              <div class="desc">
+                <div>
+                  <h2 style="margin-bottom: 40px;">Master Your Stress and Unlock Your Potential! </h2>
+                  <p>Stress is an inevitable part of life, but it doesn’t have to control you. Effective stress
+                    management is key to maintaining your overall well-being and achieving your highest potential. By
+                    adopting practices like mindfulness, exercise, and proper time management, you can transform stress
+                    from a hindrance into a catalyst for growth and success. Learn to recognize the signs of stress
+                    early, apply calming techniques, and build resilience against life's pressures. Empower yourself by
+                    mastering stress management skills and watch as your life unfolds with more peace, productivity, and
+                    fulfillment. Take charge today and lead a balanced, thriving life!</p>
+                </div>
+                <div>
+                  <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                    type="module"></script>
+
+                  <dotlottie-player src="https://lottie.host/214bad33-8b5c-4246-a2e0-7986ad22529b/ahAeYZtJYY.json"
+                    background="transparent" speed="1" style="width: 400px; height: 400px;" loop
+                    autoplay></dotlottie-player>
+                </div>
+              </div>
+              <div>
+                <h2 class="vid">For your motivation and learning:</h2>
+                <div class="video-container">
+
+                  <iframe id="videoFrame6" src="https://www.youtube.com/embed/i-pazYyLSWQ" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+                <div class="navigation">
+                  <span class="bullet bullet1 active" onclick="changeVideo(event,'i-pazYyLSWQ','videoFrame6')"></span>
+                  <span class="bullet bullet2" onclick="changeVideo(event,'9Hto1HeMrYQ','videoFrame6')"></span>
+                  <span class="bullet bullet3" onclick="changeVideo(event,'HXXClZohCkY','videoFrame6')"></span>
+                </div>
+              </div>
+              <div class="manas" style="background-color: #e7e7e7;">
+                <h1 style="display: flex; width: 100%; justify-content: center;">Trackers and Reminders</h1>
+                <br>
+                <p style="font-size: larger;">
+                  Track any relevant habit or set a remimder to help you.</p>
+                <div style="display: flex; justify-content: center; margin-top: 20px;margin-bottom: 20px;">
+                  <a class="blue" href="/">To the habit Tracker</a></button>
+                </div>
+              </div>
+            </div>
+            <div id="tab8" class="tab-content" style="display:none;">
+              <div class="desc">
+                <div>
+                  <h2 style="margin-bottom: 40px;">Balance Your Screen Time, Enhance Your Life! </h2>
+                  <p>While digital devices are integral to our modern lives, excessive screen time can lead to mental
+                    fatigue and disconnect us from the world around us. It's essential to strike a healthy balance. Set
+                    boundaries for your digital use to safeguard your eyesight, improve your sleep, and increase your
+                    real-world interactions. Make conscious choices to unplug regularly and engage in activities that
+                    enrich your physical and mental well-being. Rediscover the joys of face-to-face connections, outdoor
+                    activities, and uninterrupted personal time. Take control of your screen time and reclaim a more
+                    vibrant, engaged life!</p>
+                </div>
+                <div>
+                  <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                    type="module"></script>
+
+                  <dotlottie-player src="https://lottie.host/03d88008-2123-4115-b874-723855dd1a74/2p9XNxxrWv.json"
+                    background="transparent" speed="1" style="width: 400px; height: 400px;" loop
+                    autoplay></dotlottie-player>
+                </div>
+              </div>
+              <div>
+                <h2 class="vid">For your motivation and learning:</h2>
+                <div class="video-container">
+
+                  <iframe id="videoFrame7" src="https://www.youtube.com/embed/rx1l51qxGbQ" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+                <div class="navigation">
+                  <span class="bullet bullet1 active" onclick="changeVideo(event,'rx1l51qxGbQ','videoFrame7')"></span>
+                  <span class="bullet bullet2" onclick="changeVideo(event,'JH5bC-SLvb4','videoFrame7')"></span>
+                  <span class="bullet bullet3" onclick="changeVideo(event,'2ldLwkj4dRc','videoFrame7')"></span>
+                </div>
+              </div>
+              <div class="manas" style="background-color: #e7e7e7;">
+                <h1 style="display: flex; width: 100%; justify-content: center;">Trackers and Reminders</h1>
+                <br>
+                <p style="font-size: larger;">
+                  Track any relevant habit or set a remimder to help you.</p>
+                <div style="display: flex; justify-content: center; margin-top: 20px;margin-bottom: 20px;">
+                  <a class="blue" href="/">To the habit Tracker</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </section>
+
+      <script>
+        function changeVideo(event, videoId, frameId) {
+          var iframe = document.getElementById(frameId);
+          iframe.src = 'https://www.youtube.com/embed/' + videoId;
+
+          // Update active bullet
+          var bullets = document.querySelectorAll('.bullet');
+          bullets.forEach(bullet => {
+            bullet.classList.remove('active');
+          });
+          event.target.classList.add('active');
+        }
+        function openTab(tabName) {
+          var i, tabContent, tabLinks;
+
+
+          // Hide all tab content
+          tabContent = document.getElementsByClassName("tab-content");
+          for (i = 0; i < tabContent.length; i++) {
+            tabContent[i].style.display = "none";
+          }
+
+          // Remove 'active' class from all tab options
+          tabLinks = document.getElementsByClassName("tab-option");
+          for (i = 0; i < tabLinks.length; i++) {
+            tabLinks[i].classList.remove("active");
+          }
+
+          // Show the selected tab content and mark its tab option as active
+          document.getElementById(tabName).style.display = "block";
+          var bullet1s = document.querySelectorAll('.bullet1');
+          bullet1s.forEach(bullet1 => {
+            bullet1.classList.add('active');
+          });
+          event.currentTarget.classList.add("active");
+        }
+      </script>
+      <!-- ======= Footer ======= -->
+      <footer id="footer">
+
+        <div class="footer-top">
+          <div class="container">
+            <div class="row">
+
+              <div class="col-lg-3 col-md-6 footer-contact">
+                <h3>Mindpath</h3>
+                <p>
+                  A108 Adam Street <br>
+                  Lucknow, UP 226016<br>
+                  India <br><br>
+                  <strong>Phone:</strong> +91 9120891486<br>
+                  <strong>Email:</strong> mindpathmentalhealth@gmail.com<br>
+                </p>
+              </div>
+
+              <div class="col-lg-2 col-md-6 footer-links">
+                <h4>Useful Links</h4>
+                <ul>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                </ul>
+              </div>
+
+              <div class="col-lg-3 col-md-6 footer-links">
+                <h4>Our Services</h4>
+                <ul>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Lifestyle</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Mental health</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Articles</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">chatbot</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">assessment</a></li>
+                </ul>
+              </div>
+
+              <div class="col-lg-4 col-md-6 footer-newsletter">
+                <h4>Join Our Newsletter</h4>
+                <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                <form action="" method="post">
+                  <input type="email" name="email"><input type="submit" value="Subscribe">
+                </form>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+
+          <div class="copyright-wrap d-md-flex py-4">
+            <div class="me-md-auto text-center text-md-start">
+              <div class="copyright">
+                &copy; Copyright <strong><span>mindpath</span></strong>. All Rights Reserved
+              </div>
+              <div class="social-links text-center text-md-right pt-3 pt-md-0">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+
+          </div>
+      </footer><!-- End Footer -->
+
+
+
+
+
+
+      <!-- ======= End Personal Detail pop-up ======= -->
+      <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+          class="bi bi-arrow-up-short"></i></a>
+      <div id="preloader"></div>
+
+      <!-- Vendor JS Files -->
+      <script src="../static/vendor/purecounter/purecounter_vanilla.js"></script>
+      <script src="../static/vendor/aos/aos.js"></script>
+      <script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="../static/vendor/glightbox/js/glightbox.min.js"></script>
+      <script src="../static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+      <script src="../static/vendor/swiper/swiper-bundle.min.js"></script>
+      <script src="../static/vendor/php-email-form/validate.js"></script>
+
+      <!--login icons-->
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+      <!-- Template Main JS File -->
+      <script type="module" src="../static/js/treatmentScript.js"></script>
+      <script src="../static/js/treatmentMain.js"></script>

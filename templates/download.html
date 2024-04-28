@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download PDF</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+</head>
+
+<body>
+    <style>
+        body {
+            width: 595;
+            height: 842;
+        }
+    </style>
+    <div id="content">
+        <div style="display: flex; align-items: center;font-family: sans-serif; flex-direction: column;">
+            <h1 style=" color: blueviolet;">Mindpath Report</h1>
+            <p style="margin-top: -5px; font-size: larger;" id="name"></p>
+        </div>
+
+        <div style="margin: 10px; gap: 10px; display: flex; justify-content: space-evenly; font-size: larger; font-family: sans-serif;">
+            
+            <p id="age"> </p>
+            <p id="phone"></p>
+            <p id="gender"></p>
+            <p id="location"></p>
+            <p id="profession"></p>
+
+        </div>
+        <br>
+<div  style="margin: 10px;">
+        <h2 style="font-family: sans-serif;">Lifestyle Assessment:</h2>
+        <ul id="dataContainer" style="font-size: larger;font-family: sans-serif;"></ul>
+    </div>
+    <br>
+    <div style="margin: 10px;">
+    <h2 style="font-family: sans-serif;">Self-Counseling Summary:</h2>
+        <div>
+            <h3 style="font-family: sans-serif;">Main problem:</h3> 
+            <p style=" margin: 10px; font-size: larger; font-family: sans-serif;" id="pro"></p>
+            <h3 style="font-family: sans-serif;">Sub problem:</h3>
+            <p style="margin: 10px;font-size: larger; font-family: sans-serif;" id="sp1"> </p>
+            <p style="margin: 10px;font-size: larger; font-family: sans-serif;" id="sp2"></p>
+            <h3 style="font-family: sans-serif;">Problem origin:</h3>
+            <p style="margin: 10px;font-size: larger; font-family: sans-serif;" id="since"></p>
+
+        </div>
+        </div>
+    </div>
+    <script type="module" src="../static/js/downloadScript.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>

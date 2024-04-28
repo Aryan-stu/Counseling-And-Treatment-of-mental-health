@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>MindPath-Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../static/img/favicon.png" rel="icon">
+  <link href="../static/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../static/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../static/css/LAssessmentStyle.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top header-inner-pages ">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="/">Home</a></li>
+          <li><a class="nav-link scrollto" href="/#about">About</a></li>
+          <li><a class="nav-link scrollto" href="/#services">Services</a></li>
+          <li><a class="nav-link scrollto " href="/#testimonials">Testimonials</a></li>
+          <!--li><a class="nav-link scrollto" href="#pricing">Subscribtions</a></li-->
+          <li class="dropdown"><a href="#"><span>Products</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li class="dropdown"><a href="/"><span>Resources</span> <i
+                    class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="/bot">Sage-Bot</a></li>
+                  <li><a href="/">Articles and Info</a></li>
+                  <li><a href="/">Assessment Tools</a></li>
+                  <li><a href="/">Other Contacts</a></li>
+                  <li><a href="/">Crisis Helpline</a></li>
+                </ul>
+              <li class="dropdown"><a href="#"><span>Management</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Track Habits</a></li>
+                  <li><a href="#">Symptoms Report</a></li>
+                  <li><a href="#">Book Sessions</a></li>
+                  <li><a href="#">therapy methods</a></li>
+                  <li><a href="#">wellness resources</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Daily Diary</a></li>
+              <li><a href="#">Feedback</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+
+      </nav><!-- .navbar -->
+      <h1 class="logo"><a href="/">MindPath</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="/" class="logo"><img src="../static/img/logo.png" alt="" class="img-fluid"></a>-->
+      <nav class="navba">
+        <ul>
+          <!--li class="getstart out" id="signOutBtn">SIGNOUT</li-->
+          <li class="btnLogin-popup getstart in" id="login">LOGIN</li>
+          <li class="out"><img class="profile" id="menuButton" src="../static/img/user-profile.png" alt=""></li>
+        </ul>
+      </nav>
+    </div>
+  </header><!-- End Header -->
+  <main id="main">
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Lifestyle Assessment</h2>
+          <ol>
+            <li><a href="/">Home</a></li>
+            <li><a href="/Lifestyle">Lifestyle Assessment</a></li>
+            <li></a>Lifestyle Assessment Test</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <section class="inner-page">
+      <!-- ======= LOGIN popup ======= -->
+      <div class="wrapper2">
+        <span class="icon-close2">
+          <ion-icon name="close"></ion-icon>
+        </span>
+        <div class="form-box">
+          <h3>Enter Email to reset</h3>
+          <form action="#" id="MainForm2">
+            <div class="input-box">
+              <span class="icon"><ion-icon name="mail"></ion-icon></span>
+              <input type="email" class="snd" id="emailInp2" placeholder="Email" required>
+              <button type="submit" class="btn">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="wrapper">
+        <span class="icon-close">
+          <ion-icon name="close"></ion-icon>
+        </span>
+        <div class="form-box log">
+          <h2>LOGIN</h2>
+          <form action="#" id="MainForm">
+            <div class="input-box">
+              <span class="icon"><ion-icon name="mail"></ion-icon></span>
+              <input type="email" id="emailInp" placeholder="Email" required>
+
+            </div>
+            <div class="input-box">
+              <span class="icon" onclick="pass()"><ion-icon name="lock-closed" id="pass-icon"></ion-icon></span>
+              <input type="password" id="passwordInp" placeholder="Password" required>
+            </div>
+            <div class="remember-forgot">
+              <label><input type="checkbox" id="rememberMeCheckbox">Remember me</label>
+              <label class="forgotpass forgot">Forgot Password?</label>
+            </div>
+            <button type="submit" class="btn" id="loginbtn">Login</button>
+            <div class="login-register">
+              <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+            </div>
+          </form>
+        </div>
+
+        <div class="form-box register">
+          <h2>Registration</h2>
+          <form id="MainForm1">
+            <div class="input-box">
+              <span class="icon"><ion-icon name="person"></ion-icon></span>
+              <input type="text" id="usernameInp1" placeholder="Username" required>
+
+            </div>
+            <div class="input-box">
+              <span class="icon"><ion-icon name="mail"></ion-icon></span>
+              <input type="email" id="emailInp1" placeholder="Email" required>
+
+            </div>
+            <div class="input-box">
+              <span class="icon"><ion-icon onclick="pass1()" name="lock-closed" id="pass-icon1"></ion-icon></span>
+              <input type="password" id="passwordInp1" placeholder="Password" required>
+
+            </div>
+            <div class="remember-forgot">
+              <label><input type="checkbox" required>I Agree to Terms & Conditions</label>
+            </div>
+            <button type="submit" onclick="" class="btn">Register</button>
+            <div class="login-register">
+              <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+            </div>
+          </form>
+        </div>
+
+      </div>
+      <!-- End LOGIN popup -->
+      <!-- ======= User Profile ======= -->
+      <div class="sub-menu-wrap" id="subMenu">
+        <div class="sub-menu">
+          <div class="user-info">
+            <img id="profileImageElement" src="../static/img/user-profile.png" alt="Profile Image">
+            <h3 id="names">[Username]</h3>
+          </div>
+          <hr>
+          <a href="/user-profile" class="sub-menu-link">
+            <img src="../static/img/profile.png" alt="">
+            <p>Edit Profile</p>
+            <span>></span>
+          </a>
+          <a href="/" class="sub-menu-link">
+            <img src="../static/img/setting.png" alt="">
+            <p>Settings</p>
+            <span>></span>
+          </a>
+          <a href="#" class="sub-menu-link">
+            <img src="../static/img/help.png" alt="">
+            <p>Help</p>
+            <span>></span>
+          </a>
+          <a href="#" class="sub-menu-link">
+            <img src="../static/img/logout.png" alt="">
+            <p id="signOutBtn">Logout</p>
+            <span>></span>
+          </a>
+        </div>
+      </div>
+      </section>
+    <div class="heading">
+        <h1>Lifestyle Based Assessment Test</h1>
+        <h2>Name:</h2>
+        <h2 id="name"></h2>
+    </div>
+    <!-- Progress bar above the form -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div><br>
+
+    <!-- Form -->
+    <form id="quizForm">
+        <!-- Question 1 -->
+
+        <div class="sec" id="sec1">
+
+            <h2 class="section" id="section">Section A: Diet</h2>
+            <div style="height: none; width: 100%; margin-right: 10px; border: 1px solid blueviolet;"></div>
+            <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+
+                <p class="que">How often do you consume <strong> ultra-processed food</strong> such or packaged snacks?
+                </p>
+                <p style="color: grey;margin-top: -5px;">Example: Instant/frozen meal</p>
+                <div class="options">
+                    <label class="custom-radio" for="answer1a">Weekly or more
+                        <input type="radio" name="answer1" id="answer1a" value="Weekly or more" data-value="-1"
+                            required>
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="custom-radio" for="answer1b">Occasionally
+                        <input type="radio" name="answer1" id="answer1b" value="Occasionally" data-value="0">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="custom-radio" for="answer1c">Hardly or never
+                        <input type="radio" name="answer1" id="answer1c" value="Hardly or never" data-value="1">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div style="height: none; width: 100%; margin-right: 10px; border: 1px solid blueviolet;"></div>
+
+
+
+                <p class="que">How often do you consume Fast food, ordered food or outside meal?</p>
+                <p style="color: grey;margin-top: -5px;">Example: Street food or food from restaurents</p>
+                <div class="options">
+                    <label class="custom-radio" for="answer2a">Weekly or more
+                        <input type="radio" name="answer2" id="answer2a" value="Weekly or more" data-value="-1"
+                            required>
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="custom-radio" for="answer2b">Occasionally
+                        <input type="radio" name="answer2" id="answer2b" value="Occasionally" data-value="0">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="custom-radio" for="answer2c">Hardly or never
+                        <input type="radio" name="answer2" id="answer2c" value="Hardly or never" data-value="1">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div style="height: none; width: 100%; margin-right: 10px; border: 1px solid blueviolet;"></div>
+                <p class="que">How often do you consume ciggeratte or tobaco?</p>
+                <div class="options">
+                    <label class="custom-radio" for="answer3a">Weekly or more
+                        <input type="radio" name="answer3" id="answer3a" value="Weekly or more" data-value="-1"
+                            required>
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="custom-radio" for="answer3b">Occasionally
+                        <input type="radio" name="answer3" id="answer3b" value="Occasionally" data-value="0">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="custom-radio" for="answer3c">Hardly or never
+                        <input type="radio" name="answer3" id="answer3c" value="Hardly or never" data-value="1">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div style="height: none; width: 100%; margin-right: 10px; border: 1px solid blueviolet;"></div>
+                <p class="que">How often do you consume Alcohol?</p>
+                <div class="options">
+                    <label class="custom-radio" for="answer4a">Weekly or more
+                        <input type="radio" name="answer4" id="answer4a" value="Weekly or more" data-value="-1"
+                            required>
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="custom-radio" for="answer4b">Occasionally
+                        <input type="radio" name="answer4" id="answer4b" value="Occasionally" data-value="0">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="custom-radio" for="answer4c">Hardly or never
+                        <input type="radio" name="answer4" id="answer4c" value="Hardly or never" data-value="1">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div style="height: none; width: 100%; margin-right: 10px; border: 1px solid blueviolet;"></div>
+                <p class="que">How often do you consume sugar drink?</p>
+                <p style="color: grey;margin-top: -5px;">Example: soda, pop, cola</p>
+                <div class="options">
+                    <label class="custom-radio" for="answer5a">Weekly or more
+                        <input type="radio" name="answer5" id="answer5a" value="Weekly or more" data-value="-1"
+                            required>
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="custom-radio" for="answer5b">Occasionally
+                        <input type="radio" name="answer5" id="answer5b" value="Occasionally" data-value="0">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="custom-radio" for="answer5c">Hardly or never
+                        <input type="radio" name="answer5" id="answer5c" value="Hardly or never" data-value="1">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div style="height: none; width: 100%; margin-right: 10px; border: 1px solid blueviolet;"></div>
+                <p class="que">How often do you consume red meat?</p>
+                <p style="color: grey;margin-top: -5px;">Example: beef or pork</p>
+                <div class="options">
+                    <label class="custom-radio" for="answer6a">Weekly or more
+                        <input type="radio" name="answer6" id="answer6a" value="Weekly or more" data-value="-1"
+                            required>
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="custom-radio" for="answer6b">Occasionally
+                        <input type="radio" name="answer6" id="answer6b" value="Occasionally" data-value="0">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="custom-radio" for="answer6c">Hardly or never
+                        <input type="radio" name="answer6" id="answer6c" value="Hardly or never" data-value="1">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div style="height: none; width: 100%; margin-right: 10px; border: 1px solid blueviolet;"></div>
+                <button style="margin-top: 30px; font-size: larger;" type="button" class="next"
+                    onclick="nextQuestion()">Next</button>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="sec" id="sec2">
+
+            <h2 class="section" id="section">Section B: Habits</h2>
+            <div style="height: none; width: 100%; margin-right: 10px; border: 1px solid blueviolet;"></div>
+            <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <p class="que"> How many hours of sleep you typically get on an average night?</p>
+                <div class="options">
+                    <label class="custom-radio" for="answer7a">Less than 6 hours
+                        <input type="radio" name="answer7" id="answer7a" value="Less than 6 hours" data-value="-1"
+                            required>
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="custom-radio" for="answer7b">More than 8 hours
+                        <input type="radio" name="answer7" id="answer7b" value="More than 8 hours" data-value="0">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="custom-radio" for="answer7c">6 to 8 hours
+                        <input type="radio" name="answer7" id="answer7c" value="6 to 8 hours" data-value="1">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div style="height: none; width: 100%; margin-right: 10px; border: 1px solid blueviolet;"></div>
+
+
+                <p class="que">How often do you exersice?</p>
+                <p style="color: grey;margin-top: -5px;">For minimum 39</p>
+                <div class="options">
+                    <label class="custom-radio" for="answer8a">Rarely
+                        <input type="radio" name="answer8" id="answer8a" value="Rarely" data-value="-1"
+                            required>
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="custom-radio" for="answer8b">Inconsistently
+                        <input type="radio" name="answer8" id="answer8b" value="Inconsistently" data-value="0">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="custom-radio" for="answer8c">Daily
+                        <input type="radio" name="answer8" id="answer8c" value="Daily" data-value="1">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div style="height: none; width: 100%; margin-right: 10px; border: 1px solid blueviolet;"></div>
+
+                <p class="que">How often do you engage in social activities outside of school/work or family commitments?</p>
+                <div class="options">
+                    <label class="custom-radio" for="answer9a">Rarely
+                        <input type="radio" name="answer9" id="answer9a" value="Rarely" data-value="-1"
+                            required>
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="custom-radio" for="answer9b">Inconsistently
+                        <input type="radio" name="answer9" id="answer9b" value="Inconsistently" data-value="0">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="custom-radio" for="answer9c">Weekly or more
+                        <input type="radio" name="answer9" id="answer9c" value="Weekly or more" data-value="1">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div style="height: none; width: 100%; margin-right: 10px; border: 1px solid blueviolet;"></div>
+
+                <p class="que">If you are in a stressed situation, will you tend to use any stress management techniques?</p>
+                <div class="options">
+                    <label class="custom-radio" for="answer10a">No
+                        <input type="radio" name="answer10" id="answer10a" value="No" data-value="-1"
+                            required>
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="custom-radio" for="answer10b">I don't know
+                        <input type="radio" name="answer10" id="answer10b" value="I don't know" data-value="0">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="custom-radio" for="answer10c">Yes
+                        <input type="radio" name="answer10" id="answer10c" value="Yes" data-value="1">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div style="height: none; width: 100%; margin-right: 10px; border: 1px solid blueviolet;"></div>
+                <p class="que">How much is you average screen time?</p>
+                <div class="options">
+                    <label class="custom-radio" for="answer11a">More Than 8 hours
+                        <input type="radio" name="answer11" id="answer11a" value="More Than 8 hours" data-value="-1"
+                            required>
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="custom-radio" for="answer11b">6 to 8 hours
+                        <input type="radio" name="answer11" id="answer11b" value="6 to 8 hours" data-value="0">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="custom-radio" for="answer11c">Less than 6 hours
+                        <input type="radio" name="answer11" id="answer11c" value="Less than 6 hours" data-value="1">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div style="height: none; width: 100%; margin-right: 10px; border: 1px solid blueviolet;"></div>
+            </div>
+            <div class="buttons">
+            <button type="button" class="prev" onclick="prevQuestion()">Previous</button>
+            <button type="button" class="next" onclick="nextQuestion1()">Next</button>
+        </div>
+        </div>
+        <!-- Add more questions as needed -->
+
+        <!-- Submit button -->
+        <div id="submitSection">
+            <table id="answersTable" border="1.0">
+                <thead>
+                    <tr>
+                        <th>Question</th>
+                        <th>User's Answer</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ultra-processed food consumption</td>
+                        <td id="ans1"></td>
+                    </tr>
+                    <tr>
+                        <td>Fast food comsumption</td>
+                        <td id="ans2"></td>
+                    </tr>
+                    <tr>
+                        <td>ciggeratte or tobaco consumption</td>
+                        <td id="ans3"></td>
+                    </tr>
+                    <tr>
+                        <td>Alcohol consumption</td>
+                        <td id="ans4"></td>
+                    </tr>
+                    <tr>
+                        <td>sugar drink consumption</td>
+                        <td id="ans5"></td>
+                    </tr>
+                    <tr>
+                        <td>red meat consumption</td>
+                        <td id="ans6"></td>
+                    </tr>
+                    <tr>
+                        <td>sleep hours</td>
+                        <td id="ans7"></td>
+                    </tr>
+                    <tr>
+                        <td>exersice</td>
+                        <td id="ans8"></td>
+                    </tr>
+                    <tr>
+                        <td>involvement in social activities</td>
+                        <td id="ans9"></td>
+                    </tr>
+                    <tr>
+                        <td>stress management techniques usage</td>
+                        <td id="ans10"></td>
+                    </tr>
+                    <tr>
+                        <td>average screen time</td>
+                        <td id="ans11"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="buttons">
+            <button type="button" class="prev" onclick="prevQuestion()">Previous</button>
+            <button type="submit" class="submit" id="submitButton">Submit</button>
+            </div>
+        </div>
+    </form>
+    <script>
+
+
+        let currentSec = 1;
+        const totalSecs = document.querySelectorAll('.sec').length;
+        const progressBar = document.getElementById('progressBar');
+
+        function nextQuestion() {
+            for (let i = 1; i <= 6; i++) {
+                // Check if an answer is selected for the current question
+                const selectedAnswer = document.querySelector(`input[name="answer${i}"]:checked`);
+
+                let answers = [];
+                if (!selectedAnswer) {
+                    alert(`Please select an answer for Question ${i} before proceeding.`);
+                    return;
+                }
+
+
+
+                // Set the answer for the current question
+                const answer = selectedAnswer.value;
+
+
+                // Save the answer for the current question
+                answers[i - 1] = { answer };
+
+                // Display the selected answer for the current question
+                document.getElementById(`ans${i}`).textContent = answer;
+
+
+                // Hide the current question
+
+            }
+            // Increment currentSec and update progress bar
+            document.getElementById(`sec1`).style.display = 'none';
+            currentSec++;
+            updateProgressBar();
+
+            // Check if there are more questions or if it's time to display the submit section
+            if (currentSec <=totalSecs) {
+                const nextQuestionElement = document.getElementById(`sec2`);
+                nextQuestionElement.style.display = 'block';
+            } else {
+                document.getElementById('submitSection').style.display = 'block';
+            }
+            document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0;
+        }
+        function nextQuestion1() {
+            for (let i = 7; i <= 11; i++) {
+                // Check if an answer is selected for the current question
+                const selectedAnswer = document.querySelector(`input[name="answer${i}"]:checked`);
+
+                let answers = [];
+                if (!selectedAnswer) {
+                    alert(`Please select an answer for Question ${i-6} before proceeding.`);
+                    return;
+                }
+
+
+
+                // Set the answer for the current question
+                const answer = selectedAnswer.value;
+
+
+                // Save the answer for the current question
+                answers[i - 1] = { answer };
+
+                // Display the selected answer for the current question
+                document.getElementById(`ans${i}`).textContent = answer;
+
+
+                // Hide the current question
+
+            }
+            // Increment currentSec and update progress bar
+            document.getElementById(`sec2`).style.display = 'none';
+            currentSec++;
+            updateProgressBar();
+
+            // Check if there are more questions or if it's time to display the submit section
+            if (currentSec <=totalSecs) {
+                const nextQuestionElement = document.getElementById(`sec2`);
+                nextQuestionElement.style.display = 'block';
+            } else {
+                document.getElementById('submitSection').style.display = 'block';
+            }
+            document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0;
+        }
+
+
+        function prevQuestion() {
+            if (currentSec === totalSecs + 1) {
+                // If currently on the submit section, go back to the last question
+                document.getElementById('submitSection').style.display = 'none';
+                currentSec = totalSecs;
+                const currentSecElement = document.getElementById(`sec${currentSec}`);
+                currentSecElement.style.display = 'none';
+                updateProgressBar();
+            } else {
+
+                const currentSecElement = document.getElementById(`sec${currentSec}`);
+                currentSecElement.style.display = 'none';
+
+                currentSec--;
+                updateProgressBar();
+            }
+            if (currentSec >= 1) {
+                const prevQuestionElement = document.getElementById(`sec${currentSec}`);
+                prevQuestionElement.style.display = 'block';
+            }
+            document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0;
+
+        }
+
+
+        function updateProgressBar() {
+            const progressPercentage = ((currentSec) / (totalSecs + 1)) * 100;
+            progressBar.style.width = `${progressPercentage}%`;
+        }
+
+        // Display the first question initially and update the progress bar
+        document.getElementById('sec1').style.display = 'block';
+        updateProgressBar();
+
+        document.getElementById('quizForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Iterate over each question and get the user's answer
+            for (let i = 1; i <= totalSecs; i++) {
+                const answer = document.querySelector(`input[name="answer${i}"]:checked`).value;
+                document.getElementById(`ans${i}`).textContent = answer;
+            }
+        });
+    </script>
+    <script type="module" src="../static/js/LAssessmentScript.js"></script>
+    <script src="../static/js/LAssessmentMain.js"></script>
+</body>
+
+</html>

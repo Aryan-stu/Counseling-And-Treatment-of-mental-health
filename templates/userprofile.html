@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>MindPath-Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../static/img/favicon.png" rel="icon">
+  <link href="../static/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../static/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../static/css/stylenew.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top header-inner-pages">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="/">Home</a></li>
+          <li><a class="nav-link scrollto" href="/#about">About</a></li>
+          <li><a class="nav-link scrollto" href="/#services">Services</a></li>
+          <li><a class="nav-link scrollto " href="/#testimonials">Testimonials</a></li>
+          <!--li><a class="nav-link scrollto" href="#pricing">Subscribtions</a></li-->
+          <li class="dropdown"><a href="#"><span>Products</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li class="dropdown"><a href="/"><span>Resources</span> <i
+                    class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="/#hero">Sage-Bot</a></li>
+                  <li><a href="/#info">Articles and Info</a></li>
+                  <li><a href="/#tools">Assessment Tools</a></li>
+                  <li><a href="/#others">Other Contacts</a></li>
+                  <li><a href="/#crisis">Crisis Helpline</a></li>
+                </ul>
+              <li class="dropdown"><a href="#"><span>Management</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Track Habits</a></li>
+                  <li><a href="#">Symptoms Report</a></li>
+                  <li><a href="#">Book Sessions</a></li>
+                  <li><a href="#">therapy methods</a></li>
+                  <li><a href="#">wellness resources</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Daily Diary</a></li>
+              <li><a href="#">Feedback</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+
+      </nav><!-- .navbar -->
+      <h1 class="logo"><a href="/">MindPath</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="/" class="logo"><img src="../static/img/logo.png" alt="" class="img-fluid"></a>-->
+      <nav class="navba">
+        <ul>
+          <!--li class="getstart out" id="signOutBtn">SIGNOUT</li-->
+          <li class="btnLogin-popup getstart in" id="login">LOGIN</li>
+          <li class="out"><img class="profile" id="menuButton" src="../static/img/user-profile.png" alt=""></li>
+        </ul>
+      </nav>
+    </div>
+  </header><!-- End Header -->
+  <main id="main">
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>User Profile</h2>
+          <ol>
+            <li><a href="/">Home</a></li>
+            <li>User Profile</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <section class="inner-page">
+
+
+
+
+      <!-- ======= LOGIN popup ======= -->
+      <div class="wrapper2">
+        <span class="icon-close2">
+          <ion-icon name="close"></ion-icon>
+        </span>
+        <div class="form-box">
+          <h3>Enter Email to reset</h3>
+          <form action="#" id="MainForm2">
+            <div class="input-box">
+              <span class="icon"><ion-icon name="mail"></ion-icon></span>
+              <input type="email" class="snd" id="emailInp2" placeholder="Email" required>
+              <button type="submit" class="btn">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="wrapper">
+        <span class="icon-close">
+          <ion-icon name="close"></ion-icon>
+        </span>
+        <div class="form-box log">
+          <h2>LOGIN</h2>
+          <form action="#" id="MainForm">
+            <div class="input-box">
+              <span class="icon"><ion-icon name="mail"></ion-icon></span>
+              <input type="email" id="emailInp" placeholder="Email" required>
+
+            </div>
+            <div class="input-box">
+              <span class="icon" onclick="pass()"><ion-icon name="lock-closed" id="pass-icon"></ion-icon></span>
+              <input type="password" id="passwordInp" placeholder="Password" required>
+            </div>
+            <div class="remember-forgot">
+              <label><input type="checkbox" id="rememberMeCheckbox">Remember me</label>
+              <label class="forgotpass forgot">Forgot Password?</label>
+            </div>
+            <button type="submit" class="btn" id="loginbtn">Login</button>
+            <div class="login-register">
+              <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+            </div>
+          </form>
+        </div>
+
+        <div class="form-box register">
+          <h2>Registration</h2>
+          <form id="MainForm1">
+            <div class="input-box">
+              <span class="icon"><ion-icon name="person"></ion-icon></span>
+              <input type="text" id="usernameInp1" placeholder="Username" required>
+
+            </div>
+            <div class="input-box">
+              <span class="icon"><ion-icon name="mail"></ion-icon></span>
+              <input type="email" id="emailInp1" placeholder="Email" required>
+
+            </div>
+            <div class="input-box">
+              <span class="icon"><ion-icon onclick="pass1()" name="lock-closed" id="pass-icon1"></ion-icon></span>
+              <input type="password" id="passwordInp1" placeholder="Password" required>
+
+            </div>
+            <div class="remember-forgot">
+              <label><input type="checkbox" required>I Agree to Terms & Conditions</label>
+            </div>
+            <button type="submit" onclick="" class="btn">Register</button>
+            <div class="login-register">
+              <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+            </div>
+          </form>
+        </div>
+
+      </div>
+      <!-- End LOGIN popup -->
+      <!-- ======= User Profile ======= -->
+      <div class=" sub-menu-wrap" id="subMenu">
+        <div class="sub-menu">
+          <div class="user-info">
+            <img id="profileImageElement" src="../static/img/user-profile.png" alt="Profile Image">
+            <h3 id="name">[Username]</h3>
+          </div>
+          <hr>
+          <a href="/user-profile" class="sub-menu-link">
+            <img src="../static/img/profile.png" alt="">
+            <p>Edit Profile</p>
+            <span>></span>
+          </a>
+          <a href="/" class="sub-menu-link">
+            <img src="../static/img/setting.png" alt="">
+            <p>Settings</p>
+            <span>></span>
+          </a>
+          <a href="#" class="sub-menu-link">
+            <img src="../static/img/help.png" alt="">
+            <p>Help</p>
+            <span>></span>
+          </a>
+          <a href="#" class="sub-menu-link">
+            <img src="../static/img/logout.png" alt="">
+            <p id="signOutBtn">Logout</p>
+            <span>></span>
+          </a>
+        </div>
+      </div>
+      <!-- End User profile -->
+      <!-- ======= User ======= -->
+
+      <div class="containers">
+
+        <section class="container userProfile card ">
+          <div class="profile">
+            <figure><img id="updateProfileImageElement" src="../static/img/user-profile.png" alt="Profile Image">
+            </figure>
+          </div>
+          <div class="update">
+            <div class="loading-spinner" style="display: none;"></div>
+            <form id="ProfileImageForm" class="ProfileImageForm">
+              <input type="file" id="profileImage" accept="image/*" required>
+              <button type="submit" class="btn">Update</button>
+            </form>
+          </div>
+        </section>
+
+
+        <!-- ===== ===== Work & Skills Section ===== ===== -->
+        <section class="work_skills card container">
+
+          <!-- ===== ===== Work Contaienr ===== ===== -->
+          <div class="work">
+            <h1 class="heading">User Information</h1>
+            <div class="primary">
+              <h1 id="profileName">[Username]</h1>
+
+              <!--span>Primary</span-->
+              <ul>
+                <li class="email">
+                  <h2 class="label">Email: </h2> <br>
+                  <p class="info" id="profileEmail">NA</p>
+                </li>
+              </ul>
+
+              <!--div class="secondary">
+                    <h1>Metropolitan <br> Museum</h1>
+                    <span>Secondary</span>
+                    <p>S34 E 65th Street <br> New York, NY 10651-78 156-187-60</p>
+                </div-->
+
+            </div>
+            <!-- ===== ===== Skills Contaienr ===== ===== -->
+            <div class="skills container">
+              <h1 class="heading">Personal Details</h1>
+              <ul>
+                <li class="email">
+                  <h2 class="label">Age:</h2>
+                  <p class="info" id="detailAge"> NA</p>
+                </li>
+
+                <li class="site">
+                  <h2 class="label">Gender:</h2>
+                  <p class="info" id="detailSex">NA</p>
+                </li>
+                <li class="phone">
+                  <h2 class="label">Profession:</h2>
+                  <p class="info" id="detailProfession">NA</p>
+                </li>
+                <li class="phone">
+                  <h2 class="label">Phone:</h2>
+                  <p class="info" id="detailPhone">NA</p>
+                </li>
+
+                <li class="address">
+                  <h2 class="label">City:</h2>
+                  <p class="info" id="detailCity">NA</p>
+                </li>
+            </div>
+
+            </ul>
+          </div>
+          <div class="updateDetails">
+            <p style="color: red;" id="userDetailWarning"></p>
+            <button class="details btn">Update</button>
+
+          </div>
+        </section>
+
+
+        <!-- ===== ===== User Details Sections ===== ===== -->
+        <section class="userDetails card">
+          <h2>Mental Health Report:</h2>
+          <section class="graph">
+            <div class="semi">
+              <a href="Lifestyle" style="text-decoration: none; color: inherit;">
+                <div role="progressbar" class="progress-bar-1" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"
+                  style="--value: 0.6"></div>
+              </a>
+              <p>Lifestyle</p>
+
+            </div>
+
+
+            <div class="semi">
+              <a href="/Mental-Health">
+                <div role="progressbar" class="progress-bar-2" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"
+                  style="--value: 0.6"></div>
+              </a>
+              <p>Mental Health</p>
+
+            </div>
+
+          </section>
+          <!--div class="userName">
+                <h1 class="name">Jeremy Rose</h1>
+                <div class="map">
+                    <i class="ri-map-pin-fill ri"></i>
+                    <span>New York, NY</span>
+                </div>
+                <p>Product Designer</p>
+            </div>
+
+            <div class="rank">
+                <h1 class="heading">Rankings</h1>
+                <span>8,6</span>
+                <div class="rating">
+                    <i class="ri-star-fill rate"></i>
+                    <i class="ri-star-fill rate"></i>
+                    <i class="ri-star-fill rate"></i>
+                    <i class="ri-star-fill rate"></i>
+                    <i class="ri-star-fill rate underrate"></i>
+                </div>
+            </div>
+
+            <div class="btns">
+                <ul>
+                    <li class="sendMsg">
+                        <i class="ri-chat-4-fill ri"></i>
+                        <a href="#">Send Message</a>
+                    </li>
+
+                    <li class="sendMsg active">
+                        <i class="ri-check-fill ri"></i>
+                        <a href="#">Contacts</a>
+                    </li>
+
+                    <li class="sendMsg">
+                        <a href="#">Report User</a>
+                    </li>
+                </ul>
+            </div-->
+        </section>
+
+
+        <!-- ===== ===== Timeline & About Sections ===== ===== -->
+        <section class="timeline_about card">
+          <div class="tabs">
+            <ul>
+              <li class="bot active" onclick="toggleTab('bot')">
+                <i class="ri-user-fill ri"></i>
+                <span>Bot Analysis</span>
+              </li>
+              <li class="about" onclick="toggleTab('about')">
+                <i class="ri-eye-3-fill ri"></i>
+                <span>Track Habits</span>
+              </li>
+            </ul>
+          </div>
+        
+          <div class="contact_Info">
+            <div id="bot" class="tabContent" style="display:block;">
+              <div id="nobot">
+                <h2>Give self couseling through our chatbot to see results.</h2>
+              </div>
+              <style>
+                .gobot{
+                  display: none;
+                }
+              </style>
+              <div id="gobot">
+                <div style="margin: 10px;">
+                  <h2 style="font-family: sans-serif;">Self-Counseling Summary:</h2>
+                      <div>
+                          <h3 style="font-family: sans-serif;">Main problem:</h3> 
+                          <p style=" margin: 10px; font-size: larger; font-family: sans-serif;" id="pro"></p>
+                          <h3 style="font-family: sans-serif;">Sub problem:</h3>
+                          <p style="margin: 10px;font-size: larger; font-family: sans-serif;" id="sp1"> </p>
+                          <p style="margin: 10px;font-size: larger; font-family: sans-serif;" id="sp2"></p>
+                          <h3 style="font-family: sans-serif;">Problem origin:</h3>
+                          <p style="margin: 10px;font-size: larger; font-family: sans-serif;" id="since"></p>
+              
+                      </div>
+                      </div>
+              </div>
+            </div>
+            <div id="about" class="tabContent" style="display:none;">
+              <h1 class="heading">Coming soon</h1>
+            </div>
+
+          </div>
+        </section>
+
+
+        <!-- ======= End User ======= -->
+        <!-- ======= Personal Detail pop-up ======= -->
+
+        <div class="wrapper3" id="UserDataForm">
+          <span class="icon-close3">
+            <ion-icon name="close"></ion-icon>
+          </span>
+          <div class="form-box">
+            <h2>Personal Details</h2>
+            <form action="#">
+
+              <div class="input-box">
+                <input type="number" placeholder="Age:" id="age" required>
+              </div>
+
+              <div><label for="Sex">Sex:</label>
+                <select id="sex" required>
+                  <option value="other">Other</option>
+                  <option value=male>male</option>
+                  <option value=female>female</option>
+                </select>
+              </div>
+
+              <div class="input-box">
+                <input type="text" placeholder="Profession:" id="profession" required>
+              </div>
+
+
+              <div class="input-box">
+
+                <input type="tel" placeholder="Phone:" id="phone" required>
+              </div>
+              <div class="input-box">
+                <input type="text" placeholder="City:" id="city" required>
+              </div>
+
+
+              <button type="submit" class="btn off">Save Information</button>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Mindpath</h3>
+            <p>
+              A108 Adam Street <br>
+              Lucknow, UP 226016<br>
+              India <br><br>
+              <strong>Phone:</strong> +91 9120891486<br>
+              <strong>Email:</strong> mindpathmentalhealth@gmail.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Lifestyle</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Mental health</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Articles</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">chatbot</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">assessment</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Join Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="copyright-wrap d-md-flex py-4">
+        <div class="me-md-auto text-center text-md-start">
+          <div class="copyright">
+            &copy; Copyright <strong><span>mindpath</span></strong>. All Rights Reserved
+          </div>
+          <div class="social-links text-center text-md-right pt-3 pt-md-0">
+            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+            <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+
+
+
+  <!-- ======= End Personal Detail pop-up ======= -->
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="../static/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../static/vendor/aos/aos.js"></script>
+  <script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../static/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../static/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../static/vendor/php-email-form/validate.js"></script>
+
+  <!--login icons-->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+  <!-- Template Main JS File -->
+  <script type="module" src="../static/js/newscript.js"></script>
+  <script src="../static/js/mainnew.js"></script>
+  <script>
+    function toggleTab(tabName) {
+      if (tabName == "bot") {
+        document.getElementById("bot").style.display = "block";
+        document.getElementById("about").style.display = "none";
+        document.querySelector(".bot").classList.add("active");
+        document.querySelector(".about").classList.remove("active");
+      } else {
+        document.getElementById("bot").style.display = "none";
+        document.getElementById("about").style.display = "block";
+        document.querySelector(".bot").classList.remove("active");
+        document.querySelector(".about").classList.add("active");
+      }
+    }
+  </script>
+  
+
+</body>
+
+</html>
