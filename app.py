@@ -118,4 +118,4 @@ When you're ready, we can begin.             <button type="button" onclick="open
 
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5501)
+    app.run(host='0.0.0.0', port=5501, debug=True)
