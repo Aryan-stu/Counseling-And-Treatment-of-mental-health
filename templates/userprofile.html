@@ -41,35 +41,19 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto" href="/">Home</a></li>
-          <li><a class="nav-link scrollto" href="/#about">About</a></li>
-          <li><a class="nav-link scrollto" href="/#services">Services</a></li>
-          <li><a class="nav-link scrollto " href="/#testimonials">Testimonials</a></li>
+          <li><a class="nav-link scrollto" href="/ #about">About</a></li>
+          <li><a class="nav-link scrollto" href="/ #services">Services</a></li>
           <!--li><a class="nav-link scrollto" href="#pricing">Subscribtions</a></li-->
-          <li class="dropdown"><a href="#"><span>Products</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li class="dropdown"><a href="/"><span>Resources</span> <i
-                    class="bi bi-chevron-right"></i></a>
+
+              <li class="dropdown"id="authLink"><a href="/"><span>Resources</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="/#hero">Sage-Bot</a></li>
-                  <li><a href="/#info">Articles and Info</a></li>
-                  <li><a href="/#tools">Assessment Tools</a></li>
-                  <li><a href="/#others">Other Contacts</a></li>
-                  <li><a href="/#crisis">Crisis Helpline</a></li>
-                </ul>
-              <li class="dropdown"><a href="#"><span>Management</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Track Habits</a></li>
-                  <li><a href="#">Symptoms Report</a></li>
-                  <li><a href="#">Book Sessions</a></li>
-                  <li><a href="#">therapy methods</a></li>
-                  <li><a href="#">wellness resources</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Daily Diary</a></li>
-              <li><a href="#">Feedback</a></li>
-            </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                  <li id="authLink"><a href="/Lifestyle">Lifestyle</a></li>
+                  <li id="authLink"><a href="/Mental-Health">Mental Health</a></li>
+                  <li id="authLink"><a href="/bot">Self-counseling</a></li>
+                  <li id="authLink"><a href="/nearyou">Professionals tracker</a></li>
+                  <li id="authLink"><a href="/appointment">Book appointment</a></li>
+                </ul>          </li>
+                <li><a class="nav-link scrollto" href="/ #contact">Contact us</a></li>
 
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -289,6 +273,7 @@
             <button class="details btn">Update</button>
 
           </div>
+
         </section>
 
 
@@ -371,43 +356,97 @@
               </li>
             </ul>
           </div>
-        
+
           <div class="contact_Info">
             <div id="bot" class="tabContent" style="display:block;">
               <div id="nobot">
                 <h2>Give self couseling through our chatbot to see results.</h2>
               </div>
               <style>
-                .gobot{
+                .gobot {
                   display: none;
                 }
               </style>
               <div id="gobot">
                 <div style="margin: 10px;">
                   <h2 style="font-family: sans-serif;">Self-Counseling Summary:</h2>
-                      <div>
-                          <h3 style="font-family: sans-serif;">Main problem:</h3> 
-                          <p style=" margin: 10px; font-size: larger; font-family: sans-serif;" id="pro"></p>
-                          <h3 style="font-family: sans-serif;">Sub problem:</h3>
-                          <p style="margin: 10px;font-size: larger; font-family: sans-serif;" id="sp1"> </p>
-                          <p style="margin: 10px;font-size: larger; font-family: sans-serif;" id="sp2"></p>
-                          <h3 style="font-family: sans-serif;">Problem origin:</h3>
-                          <p style="margin: 10px;font-size: larger; font-family: sans-serif;" id="since"></p>
-              
-                      </div>
-                      </div>
+                  <div>
+                    <h3 style="font-family: sans-serif;">Main problem:</h3>
+                    <p style=" margin: 10px; font-size: larger; font-family: sans-serif;" id="pro"></p>
+                    <h3 style="font-family: sans-serif;">Sub problem:</h3>
+                    <p style="margin: 10px;font-size: larger; font-family: sans-serif;" id="sp1"> </p>
+                    <p style="margin: 10px;font-size: larger; font-family: sans-serif;" id="sp2"></p>
+                    <h3 style="font-family: sans-serif;">Problem origin:</h3>
+                    <p style="margin: 10px;font-size: larger; font-family: sans-serif;" id="since"></p>
+
+                  </div>
+                </div>
               </div>
             </div>
             <div id="about" class="tabContent" style="display:none;">
-              <h1 class="heading">Coming soon</h1>
+              <h1 class="heading">Today's tracker</h1>
+              <form>
+              <div style=" display: flex; height: 50px; width: 100%; border: 1px solid black; padding: 10px; margin-bottom: 20px;">
+                <p style="margin-right: 10px;">Water consmption (At least 2.7 liters)</p>
+                <p style="margin-right: 5px;">Yes</p><input style="margin-right: 20px;" type="radio" name="answer1"
+                  id="answer1a" data-value="1" required>
+                <p style="margin-right: 5px;">No</p><input style="margin-right: 10px;" type="radio" name="answer1"
+                  id="answer1b" data-value="-1">
+              </div>
+              <div style=" display: flex; height: 50px; width: 100%; border: 1px solid black; padding: 10px; margin-bottom: 20px;">
+                <p style="margin-right: 10px;">Alcohol avoidance (best case: none)</p>
+                <p style="margin-right: 5px;">Yes</p><input style="margin-right: 20px;" type="radio" name="answer2"
+                  id="answer2a" data-value="1" required>
+                <p style="margin-right: 5px;">No</p><input style="margin-right: 10px;" type="radio" name="answer2"
+                  id="answer2b" data-value="-1">
+              </div>
+              <div style=" display: flex; height: 50px; width: 100%; border: 1px solid black; padding: 10px; margin-bottom: 20px;">
+                <p style="margin-right: 10px;">Follow a diet  (home made and healthy)</p>
+                <p style="margin-right: 5px;">Yes</p><input style="margin-right: 20px;" type="radio" name="answer3"
+                  id="answer3a" data-value="1" required>
+                <p style="margin-right: 5px;">No</p><input style="margin-right: 10px;" type="radio" name="answer3"
+                  id="answer3b" data-value="-1">
+              </div>
+              <div style=" display: flex; height: 50px; width: 100%; border: 1px solid black; padding: 10px; margin-bottom: 20px;">
+                <p style="margin-right: 10px;">Socialising (As to your preference)</p>
+                <p style="margin-right: 5px;">Yes</p><input style="margin-right: 20px;" type="radio" name="answer4"
+                  id="answer4a" data-value="1" required>
+                <p style="margin-right: 5px;">No</p><input style="margin-right: 10px;" type="radio" name="answer4"
+                  id="answer4b" data-value="-1">
+              </div>
+              <div style=" display: flex; height: 50px; width: 100%; border: 1px solid black; padding: 10px; margin-bottom: 20px;">
+                <p style="margin-right: 10px;">Sleep hours (At least 7 hours)</p>
+                <p style="margin-right: 5px;">Yes</p><input style="margin-right: 20px;" type="radio" name="answer5"
+                  id="answer5a" data-value="1" required>
+                <p style="margin-right: 5px;">No</p><input style="margin-right: 10px;" type="radio" name="answer5"
+                  id="answer5b" data-value="-1">
+              </div>
+              <div style=" display: flex; height: 50px; width: 100%; border: 1px solid black; padding: 10px; margin-bottom: 20px;">
+                <p style="margin-right: 10px;">Screen time (less than 6 hours)</p>
+                <p style="margin-right: 5px;">Yes</p><input style="margin-right: 20px;" type="radio" name="answer6"
+                  id="answer6a" data-value="1" required>
+                <p style="margin-right: 5px;">No</p><input style="margin-right: 10px;" type="radio" name="answer6"
+                  id="answer6b" data-value="-1">
+              </div>
+              <div style=" display: flex; height: 50px; width: 100%; border: 1px solid black; padding: 10px; margin-bottom: 20px;">
+                <p style="margin-right: 10px;">Exersice (At least 30 mins)</p>
+                <p style="margin-right: 5px;">Yes</p><input style="margin-right: 20px;" type="radio" name="answer7"
+                  id="answer7a" data-value="1" required>
+                <p style="margin-right: 5px;">No</p><input style="margin-right: 10px;" type="radio" name="answer7"
+                  id="answer7b" data-value="-1">
+              </div>
+              <div style="width: 100%; display: flex; justify-content: center;">
+                <button class="blue"> Submit Today's Data</button>
+
+              </div>
+              </form>
             </div>
 
           </div>
         </section>
-
+</div>
 
         <!-- ======= End User ======= -->
-        <!-- ======= Personal Detail pop-up ======= -->
 
         <div class="wrapper3" id="UserDataForm">
           <span class="icon-close3">
@@ -449,7 +488,7 @@
 
         </div>
 
-      </div>
+
     </section>
   </main>
   <!-- ======= Footer ======= -->
@@ -564,7 +603,7 @@
       }
     }
   </script>
-  
+
 
 </body>
 
